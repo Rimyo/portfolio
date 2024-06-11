@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar button {
+            font-size: 16px;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #555;
+            color: white;
+            border: none;
+            margin: 0 5px;
+        }
+        .navbar button:hover {
+            background-color: #777;
+        }
+        .content {
+            padding: 20px;
+        }
+    </style>
+    {% load i18n %}
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <!-- Your website logo or name -->
+            <span>My Website</span>
+        </div>
+        <div>
+            <!-- Language selection buttons -->
+            <form id="language_form" method="post" action="{% url 'set_language' %}">
+                {% csrf_token %}
+                <select name="language" onchange="this.form.submit();">
+                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
+                    <option value="fr" {% if LANGUAGE_CODE == 'fr' %}selected{% endif %}>Français</option>
+                    <option value="cn" {% if LANGUAGE_CODE == 'cn' %}selected{% endif %}>中文</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

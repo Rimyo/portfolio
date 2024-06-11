@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +26,23 @@ SECRET_KEY = 'django-insecure-o%^9mn)p5871+p!n@@&47v!*!r9w-&@ri8pcs00i#r@)6s8d6b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [".vercel.app"]
+LANGUAGES = [
+    ('en', 'English'),
+    ('fr', 'Français'),
+    ('cn', '中文')
+]
+
+LANGUAGE_CODE = 'fr'
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
+
+
+ALLOWED_HOSTS = [
+    ".vercel.app",
+    "127.0.0.1",
+    ]
 
 
 # Application definition
@@ -48,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
