@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resume>
+    <personalInfo>
+        <name>Mingjie Zhang</name>
+        <age>21</age>
+        <phone>06 05 72 57 82</phone>
+        <address>4 Rue Césaria Evora, 93300 Aubervilliers</address>
+        <email>mingjie.zhang.pro@gmail.com</email>
+        <linkedin>https://www.linkedin.com/in/mingjie-zhang-300ab9267/</linkedin>
+        <github>https://github.com/Rimyo</github>
+    </personalInfo>
+    <objective>
+        A la recherche d’un contrat d’apprentissage de 24 mois, à raison d’un mois sur deux en entreprise, dès septembre 2023
+    </objective>
+    <education>
+        <course>
+            <years>2022 - 2025</years>
+            <degree>Cursus Ingénieur Informatique</degree>
+            <institution>Sup Galilée, Villetaneuse</institution>
+        </course>
+        <course>
+            <years>2020 - 2022</years>
+            <degree>Cursus préparatoire d'ingénieur intégré</degree>
+            <institution>Sup Galilée, Villetaneuse</institution>
+        </course>
+        <course>
+            <years>2017 - 2020</years>
+            <degree>Baccalauréat Scientifique</degree>
+            <institution>Lycée Hélène Boucher, Paris</institution>
+        </course>
+    </education>
+    <experience>
+        <job>
+            <years>07/2021 - 08/2021</years>
+            <position>Rénovateur d'intérieur</position>
+            <location>Torcy (77)</location>
+            <tasks>
+                <task>Application de la peinture</task>
+                <task>Mettre en place un faux-plafond</task>
+            </tasks>
+        </job>
+        <job>
+            <years>07/2020 - 08/2020</years>
+            <position>Distributeur de prospectus auprès des pharmacies (CDI)</position>
+            <location>Paris (75), Saint-Denis(93), Val-de-Marne (74)</location>
+            <tasks>
+                <task>Présentation du produit</task>
+            </tasks>
+        </job>
+        <job>
+            <years>2018 - 2019</years>
+            <position>Serveur</position>
+            <location>Divers lieux (Restaurant, Buffet à volonté)</location>
+            <tasks>
+                <task>Gestion de commandes</task>
+                <task>Conseiller des items sur le menu</task>
+            </tasks>
+        </job>
+        <job>
+            <years>06/2018 - 08/2018</years>
+            <position>Traducteur indépendant</position>
+            <location>Divers lieux</location>
+            <tasks>
+                <task>Interpréter les besoins du client</task>
+            </tasks>
+        </job>
+        <job>
+            <years>06/2019 - 08/2019</years>
+            <position>Traducteur indépendant</position>
+            <location>Divers lieux</location>
+            <tasks>
+                <task>Interpréter les besoins du client</task>
+            </tasks>
+        </job>
+    </experience>
+    <skills>
+        <skill>
+            <category>Langues</category>
+            <details>
+                <detail>Chinois : bilingue</detail>
+                <detail>Anglais : courant</detail>
+                <detail>Espagnol : débutant</detail>
+            </details>
+        </skill>
+        <skill>
+            <category>Compétences informatiques</category>
+            <details>
+                <detail>Web: HTML / CSS / JavaScript</detail>
+                <detail>Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS</detail>
+                <detail>Moteur de Jeu: Unity</detail>
+                <detail>Conception: UML, Design Pattern</detail>
+                <detail>Logiciel: RStudio, WireShark</detail>
+                <detail>Donnée: SQL (Oracle)</detail>
+                <detail>Autre: Git, Excel, Linux</detail>
+            </details>
+        </skill>
+    </skills>
+    <projects>
+        <schoolProjects>
+            <project>Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C</project>
+            <project>Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C</project>
+            <project>Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19</project>
+            <project>Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C</project>
+            <project>Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population</project>
+            <project>Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java</project>
+        </schoolProjects>
+        <personalProjects>
+            <project>Apprentissage de C# et de Unity</project>
+            <project>Conception et réalisation de prototypes de jeux vidéos</project>
+        </personalProjects>
+    </projects>
+</resume>
