@@ -7,8 +7,8 @@
     <xsl:template match="/">
         <html>
             <head>
-                <link rel="stylesheet" type="text/css" href="resume.css"/>
                 <title>Resume of Mingjie Zhang</title>
+                <link rel="stylesheet" type="text/css" href="resume.css"/>
                 <script type="text/javascript">
                     function changeLanguage() {
                         document.getElementById('language_form').submit();
@@ -18,14 +18,17 @@
             <body>
                 <div class="navbar">
                     <div>
+                        <!-- Your website logo or name -->
                         <span>My Website</span>
                     </div>
                     <div>
+                        <!-- Language selection buttons -->
                         <form id="language_form" method="post" action="/set_language">
                             <select name="language" onchange="changeLanguage()">
                                 <option value="en">English</option>
                                 <option value="fr">Français</option>
                                 <option value="cn">中文</option>
+                                <!-- Add more languages as needed -->
                             </select>
                         </form>
                     </div>

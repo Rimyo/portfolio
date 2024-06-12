@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-o%^9mn)p5871+p!n@@&47v!*!r9w-&@ri8pcs00i#r@)6s8d6b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+
 LANGUAGES = [
     ('en', 'English'),
     ('fr', 'Français'),
