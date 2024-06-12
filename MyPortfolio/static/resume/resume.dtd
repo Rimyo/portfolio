@@ -1,0 +1,37 @@
+<!ELEMENT resume (personalInfo, objective, education, experience, skills, projects)>
+
+<!ELEMENT personalInfo (name, age, phone, address, email, linkedin, github)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+
+<!ELEMENT objective (#PCDATA)>
+
+<!ELEMENT education (course+)>
+<!ELEMENT course (years, degree, institution)>
+<!ELEMENT years (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ELEMENT institution (#PCDATA)>
+
+<!ELEMENT experience (job+)>
+<!ELEMENT job (years, position, location, tasks)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT years (#PCDATA)>
+<!ELEMENT tasks (task+)>
+<!ELEMENT task (#PCDATA)>
+
+<!ELEMENT skills (skill+)>
+<!ELEMENT skill (category, details)>
+<!ELEMENT category (#PCDATA)>
+<!ELEMENT details (detail+)>
+<!ELEMENT detail (#PCDATA)>
+
+<!ELEMENT projects (schoolProjects, personalProjects)>
+<!ELEMENT schoolProjects (project+)>
+<!ELEMENT personalProjects (project+)>
+<!ELEMENT project (#PCDATA)>

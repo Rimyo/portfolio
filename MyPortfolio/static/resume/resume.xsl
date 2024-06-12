@@ -8,7 +8,7 @@
         <html>
             <head>
                 <title>Resume of Mingjie Zhang</title>
-                <link rel="stylesheet" type="text/css" href="resume.css"/>
+                <link rel="stylesheet" type="text/css" href="/static/resume/resume.css"/>
                 <script type="text/javascript">
                     function changeLanguage() {
                         document.getElementById('language_form').submit();
