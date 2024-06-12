@@ -5,7 +5,7 @@ import os
 
 
 def resume_view(request):
-    xml_file_path = os.path.join('MyPortfolio', 'static', 'resume', 'resume.xml')
+    xml_file_path = os.path.join('MyPortfolio', 'templates', 'resume', 'resume.xml')
 
     # Read XML content
     with open(xml_file_path, 'rb') as xml_file:
