@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.navbar select {
+    font-size: 16px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    border: none;
+}
+.navbar select:hover {
+    background-color: #777;
+}
+.resume-container {
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    margin: 60px auto 20px; /* Adjusted margin to account for the fixed navbar */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1, h2, h3 {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin: 0 -20px 20px;
+}
+.section {
+    margin-bottom: 20px;
+}
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+.section ul li {
+    margin: 5px 0;
+}
+.personalInfo p, .objective p {
+    margin: 5px 0;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-info p {
+    margin: 0;
+}
+.skills ul, .experience ul {
+    margin-left: 20px;
+}
+.experience ul ul {
+    margin-left: 20px;
+}
