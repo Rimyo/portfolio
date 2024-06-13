@@ -81,7 +81,7 @@ def books(request):
     with open(xml_file_path, 'rb') as xml_file:
         xml_content = xml_file.read()
         
-    return render(xml_content, content_type='application/xml')
+    return HttpResponse(xml_content, content_type='application/xml')
 
 def home(request):
     context = {

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<catalog>
+<?xml-stylesheet type="text/xsl" href="/static/books.xsl"?>
+<catalog xmlns="https://mingjie-portfolio.vercel.app/books/">
     <book id="bk101">
         <author>Gambardella, Matthew</author>
         <title>XML Developer's Guide</title>
