@@ -9,22 +9,6 @@
             <head>
                 <title>Resume of Mingjie Zhang</title>
                 <link rel="stylesheet" type="text/css" href="/static/resume/resume.css"/>
-                <style>
-                    .flag {
-                        width: 24px;
-                        height: 24px;
-                        cursor: pointer;
-                        margin: 0 5px;
-                    }
-                    .navbar a.home-button {
-                        color: white;
-                        text-decoration: none;
-                        margin-left: 20px;
-                    }
-                    .navbar a.home-button:hover {
-                        text-decoration: underline;
-                    }
-                </style>
                 <script type="text/javascript">
                     <![CDATA[
                     function changeLanguage(lang) {
