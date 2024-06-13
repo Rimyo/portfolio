@@ -77,7 +77,7 @@ def resume_view(request):
     return HttpResponse(full_xml_str, content_type='application/xml')
 
 def books(request):
-    xml_file_path = os.path.join('MyPortfolio', 'templates', 'book.xml')
+    xml_file_path = os.path.join('MyPortfolio', 'templates', 'books.xml')
     with open(xml_file_path, 'rb') as xml_file:
         xml_content = xml_file.read()
         
