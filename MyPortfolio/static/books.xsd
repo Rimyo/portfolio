@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="https://mingjie-portfolio.vercel.app/books"
            xmlns="https://mingjie-portfolio.vercel.app/books"
            elementFormDefault="qualified">
            
