@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-12 22:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: MyPortfolio/templates/home.html:6
+msgid "This is a test."
+msgstr "This is a test."
+
+#: portfolio/settings.py:41
+msgid "English"
+msgstr "English"
+
+#: portfolio/settings.py:42
+msgid "Français"
+msgstr "French"
+
+#: portfolio/settings.py:43
+msgid "中文"
+msgstr "Chinese"
+
+msgid "Mingjie Zhang"
+msgstr "Mingjie Zhang"
+
+msgid "21"
+msgstr "21"
+
+msgid "06 05 72 57 82"
+msgstr "06 05 72 57 82"
+
+msgid "4 Rue Césaria Evora, 93300 Aubervilliers"
+msgstr "4 Rue Césaria Evora, 93300 Aubervilliers"
+
+msgid "mingjie.zhang.pro@gmail.com"
+msgstr "mingjie.zhang.pro@gmail.com"
+
+msgid "https://www.linkedin.com/in/mingjie-zhang-300ab9267/"
+msgstr "https://www.linkedin.com/in/mingjie-zhang-300ab9267/"
+
+msgid "https://github.com/Rimyo"
+msgstr "https://github.com/Rimyo"
+
+msgid "A la recherche d’un contrat d’apprentissage de 24 mois, à raison d’un mois sur deux en entreprise, dès septembre 2023"
+msgstr "Looking for a 24-month apprenticeship contract, alternating one month at a time in the company, from September 2023"
+
+msgid "2022 - 2025"
+msgstr "2022 - 2025"
+
+msgid "Cursus Ingénieur Informatique"
+msgstr "Computer Engineering Curriculum"
+
+msgid "Sup Galilée, Villetaneuse"
+msgstr "Sup Galilée, Villetaneuse"
+
+msgid "2020 - 2022"
+msgstr "2020 - 2022"
+
+msgid "Cursus préparatoire d'ingénieur intégré"
+msgstr "Integrated Engineer Preparatory Curriculum"
+
+msgid "2017 - 2020"
+msgstr "2017 - 2020"
+
+msgid "Baccalauréat Scientifique"
+msgstr "Scientific Baccalaureate"
+
+msgid "Lycée Hélène Boucher, Paris"
+msgstr "Lycée Hélène Boucher, Paris"
+
+msgid "09/2023 - 08/2025"
+msgstr "09/2023 - 08/2025"
+
+msgid "Développeur Python, fullstack | BNP Paribas Arbitrage"
+msgstr "Python Developer, fullstack | BNP Paribas Arbitrage"
+
+msgid "Paris (75), Montreuil (93)"
+msgstr "Paris (75), Montreuil (93)"
+
+msgid "task 1"
+msgstr "task 1"
+
+msgid "task 2"
+msgstr "task 2"
+
+msgid "task 3"
+msgstr "task 3"
+
+msgid "task 4"
+msgstr "task 4"
+
+msgid "Langues"
+msgstr "Languages"
+
+msgid "Chinois : bilingue"
+msgstr "Chinese: bilingual"
+
+msgid "Anglais : courant"
+msgstr "English: fluent"
+
+msgid "Espagnol : débutant"
+msgstr "Spanish: beginner"
+
+msgid "Compétences informatiques"
+msgstr "Computer Skills"
+
+msgid "Web: HTML / CSS / JavaScript / Django / XML"
+msgstr "Web: HTML / CSS / JavaScript / Django / XML"
+
+msgid "Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS"
+msgstr "Languages: C / R / C# / Java / Python / PHP / Matlab / MIPS"
+
+msgid "Moteur de Jeu: Unity"
+msgstr "Game Engine: Unity"
+
+msgid "Conception: UML, Design Pattern"
+msgstr "Design: UML, Design Patterns"
+
+msgid "Logiciel: RStudio, WireShark"
+msgstr "Software: RStudio, WireShark"
+
+msgid "Donnée: SQL (Oracle)"
+msgstr "Data: SQL (Oracle)"
+
+msgid "Autre: Git, Excel, Linux"
+msgstr "Other: Git, Excel, Linux"
+
+msgid "Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C"
+msgstr "Design and development of an RPG (Role Play Game) using a graphical library in C"
+
+msgid "Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C"
+msgstr "Development of the Mastermind game using the GTK3 library and an MVC system in C"
+
+msgid "Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19"
+msgstr "Conducting a data study in R to find a correlation between the music listened to by the French and the COVID-19 lockdowns"
+
+msgid "Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C"
+msgstr "Design and development of a program to calculate the shortest route between 2 metro stations in C"
+
+msgid "Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population"
+msgstr "Modeling and design of a mobile application that tracks the evolution of an epidemic within a population"
+
+msgid "Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java"
+msgstr "Design, modeling, and development of a program to simulate an ecosystem in Java"
+
+msgid "Apprentissage de C# et de Unity"
+msgstr "Learning C# and Unity"
+
+msgid "Conception et réalisation de prototypes de jeux vidéos"
+msgstr "Design and development of video game prototypes"
+
+msgid "Resume of Mingjie Zhang"
+msgstr "Resume of Mingjie Zhang"
+
+msgid "Objectif"
+msgstr "Objective"
+
+msgid "Éducation"
+msgstr "Education"
+
+msgid "Compétences"
+msgstr "Skills"
+
+msgid "Expériences Professionnelles"
+msgstr "Professional Experience"
+
+msgid "Projets"
+msgstr "Projects"
+
+msgid "Projets scolaires"
+msgstr "School Projects"
+
+msgid "Projets personnels"
+msgstr "Personal Projects"
+
+msgid "LinkedIn"
+msgstr "LinkedIn"

@@ -20,11 +20,13 @@ from . import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('i18n/', include('django.conf.urls.i18n')),  
     path('', views.home, name='home'),
     path('resume/', views.resume_view, name='resume'),
+    path('i18n/', include('django.conf.urls.i18n')),  
+    path('set_language/', views.set_language, name='set_language'),
 ]
 
 if settings.DEBUG:

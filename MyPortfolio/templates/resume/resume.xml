@@ -37,10 +37,10 @@
             <position>Développeur Python, fullstack | BNP Paribas Arbitrage</position>
             <location>Paris (75), Montreuil (93)</location>
             <tasks>
-                <task>task 1</task>
-                <task>task 2</task>
-                <task>task 3</task>
-                <task>task 4</task>
+                <task>tâche 1</task>
+                <task>tâche 2</task>
+                <task>tâche 3</task>
+                <task>tâche 4</task>
             </tasks>
         </job>
     </experience>

@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-12 22:17+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_Hans\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: MyPortfolio/templates/home.html:6
+msgid "This is a test."
+msgstr "这是一个测试。"
+
+#: portfolio/settings.py:41
+msgid "English"
+msgstr "英语"
+
+#: portfolio/settings.py:42
+msgid "Français"
+msgstr "法语"
+
+#: portfolio/settings.py:43
+msgid "中文"
+msgstr "中文"
+
+msgid "Mingjie Zhang"
+msgstr "张明杰"
+
+msgid "21"
+msgstr "21"
+
+msgid "06 05 72 57 82"
+msgstr "06 05 72 57 82"
+
+msgid "4 Rue Césaria Evora, 93300 Aubervilliers"
+msgstr "4 Rue Césaria Evora, 93300 欧贝维利耶"
+
+msgid "mingjie.zhang.pro@gmail.com"
+msgstr "mingjie.zhang.pro@gmail.com"
+
+msgid "https://www.linkedin.com/in/mingjie-zhang-300ab9267/"
+msgstr "https://www.linkedin.com/in/mingjie-zhang-300ab9267/"
+
+msgid "https://github.com/Rimyo"
+msgstr "https://github.com/Rimyo"
+
+msgid "A la recherche d’un contrat d’apprentissage de 24 mois, à raison d’un mois sur deux en entreprise, dès septembre 2023"
+msgstr "寻求为期24个月的学徒合同，从2023年9月开始，每两个月在公司工作一个月"
+
+msgid "2022 - 2025"
+msgstr "2022 - 2025"
+
+msgid "Cursus Ingénieur Informatique"
+msgstr "计算机工程课程"
+
+msgid "Sup Galilée, Villetaneuse"
+msgstr "Sup Galilée, Villetaneuse"
+
+msgid "2020 - 2022"
+msgstr "2020 - 2022"
+
+msgid "Cursus préparatoire d'ingénieur intégré"
+msgstr "综合工程师预备课程"
+
+msgid "2017 - 2020"
+msgstr "2017 - 2020"
+
+msgid "Baccalauréat Scientifique"
+msgstr "科学学士"
+
+msgid "Lycée Hélène Boucher, Paris"
+msgstr "巴黎 Hélène Boucher 高中"
+
+msgid "09/2023 - 08/2025"
+msgstr "09/2023 - 08/2025"
+
+msgid "Développeur Python, fullstack | BNP Paribas Arbitrage"
+msgstr "Python 开发人员，全栈 | 法国巴黎银行套利"
+
+msgid "Paris (75), Montreuil (93)"
+msgstr "巴黎 (75)，蒙特勒伊 (93)"
+
+msgid "task 1"
+msgstr "任务 1"
+
+msgid "task 2"
+msgstr "任务 2"
+
+msgid "task 3"
+msgstr "任务 3"
+
+msgid "task 4"
+msgstr "任务 4"
+
+msgid "Langues"
+msgstr "语言"
+
+msgid "Chinois : bilingue"
+msgstr "中文：双语"
+
+msgid "Anglais : courant"
+msgstr "英语：流利"
+
+msgid "Espagnol : débutant"
+msgstr "西班牙语：初级"
+
+msgid "Compétences informatiques"
+msgstr "计算机技能"
+
+msgid "Web: HTML / CSS / JavaScript / Django / XML"
+msgstr "Web：HTML / CSS / JavaScript / Django / XML"
+
+msgid "Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS"
+msgstr "语言：C / R / C# / Java / Python / PHP / Matlab / MIPS"
+
+msgid "Moteur de Jeu: Unity"
+msgstr "游戏引擎：Unity"
+
+msgid "Conception: UML, Design Pattern"
+msgstr "设计：UML，设计模式"
+
+msgid "Logiciel: RStudio, WireShark"
+msgstr "软件：RStudio，WireShark"
+
+msgid "Donnée: SQL (Oracle)"
+msgstr "数据：SQL (Oracle)"
+
+msgid "Autre: Git, Excel, Linux"
+msgstr "其他：Git，Excel，Linux"
+
+msgid "Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C"
+msgstr "使用 C 的图形库设计和开发一个角色扮演游戏 (RPG)"
+
+msgid "Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C"
+msgstr "使用 GTK3 库和 MVC 系统用 C 开发 Mastermind 游戏"
+
+msgid "Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19"
+msgstr "用 R 进行数据研究，以找到法国人听的音乐与 COVID-19 封锁之间的相关性"
+
+msgid "Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C"
+msgstr "设计和开发一个 C 程序，以计算两个地铁站之间的最短路线"
+
+msgid "Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population"
+msgstr "建模和设计一个手机应用程序，用于跟踪人口中疫情的演变"
+
+msgid "Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java"
+msgstr "设计、建模和开发一个 Java 程序，用于模拟生态系统"
+
+msgid "Apprentissage de C# et de Unity"
+msgstr "学习 C# 和 Unity"
+
+msgid "Conception et réalisation de prototypes de jeux vidéos"
+msgstr "设计和开发电子游戏原型"
+
+msgid "Resume of Mingjie Zhang"
+msgstr "张明杰的简历"
+
+msgid "Objectif"
+msgstr "目标"
+
+msgid "Éducation"
+msgstr "教育"
+
+msgid "Compétences"
+msgstr "技能"
+
+msgid "Expériences Professionnelles"
+msgstr "工作经验"
+
+msgid "Projets"
+msgstr "项目"
+
+msgid "Projets scolaires"
+msgstr "学校项目"
+
+msgid "Projets personnels"
+msgstr "个人项目"
+
+msgid "LinkedIn"
+msgstr "领英"

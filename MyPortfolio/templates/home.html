@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% block title %}Home{% endblock %}
-
 {% block content %}
-<p>Hello World !</p>
-<p>Hello me !</p>
+<p>Hello World!</p>
+<p>{% trans "This is a test." %}</p>
 <button onclick="window.location.href='/resume/'">Voir le Résumé XML</button>
 {% endblock %}

@@ -17,41 +17,42 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
-        .navbar button {
-            font-size: 16px;
-            padding: 10px 20px;
+        .navbar img.flag {
+            width: 24px;
+            height: 24px;
             cursor: pointer;
-            background-color: #555;
-            color: white;
-            border: none;
             margin: 0 5px;
-        }
-        .navbar button:hover {
-            background-color: #777;
         }
         .content {
             padding: 20px;
+            margin: 60px 0 0 0;
         }
     </style>
     {% load i18n %}
+    {% load static %}
 </head>
 <body>
     <div class="navbar">
         <div>
             <!-- Your website logo or name -->
-            <span>My Website</span>
+            <a href="{% url 'home' %}"><span>My Website</span></a>
         </div>
         <div>
-            <!-- Language selection buttons -->
+            <!-- Language selection flags -->
             <form id="language_form" method="post" action="{% url 'set_language' %}">
                 {% csrf_token %}
-                <select name="language" onchange="this.form.submit();">
-                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>English</option>
-                    <option value="fr" {% if LANGUAGE_CODE == 'fr' %}selected{% endif %}>Français</option>
-                    <option value="cn" {% if LANGUAGE_CODE == 'cn' %}selected{% endif %}>中文</option>
-                    <!-- Add more languages as needed -->
-                </select>
+                <input type="hidden" name="next" value="{{ request.get_full_path }}" />
+                <input type="hidden" id="language_input" name="language" />
+                <img src="{% static 'flags/en.svg' %}" class="flag" onclick="changeLanguage('en')" alt="English"/>
+                <img src="{% static 'flags/fr.svg' %}" class="flag" onclick="changeLanguage('fr')" alt="Français"/>
+                <img src="{% static 'flags/cn.svg' %}" class="flag" onclick="changeLanguage('zh-hans')" alt="中文"/>
             </form>
         </div>
     </div>
@@ -59,5 +60,11 @@
         {% block content %}
         {% endblock %}
     </div>
+    <script type="text/javascript">
+        function changeLanguage(lang) {
+            document.getElementById('language_input').value = lang;
+            document.getElementById('language_form').submit();
+        }
+    </script>
 </body>
 </html>
