@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            xmlns="https://mingjie-portfolio.vercel.app/books"
+           targetNamespace="https://mingjie-portfolio.vercel.app/books"
            elementFormDefault="qualified">
-           
+
     <xs:element name="catalog">
         <xs:complexType>
             <xs:sequence>
