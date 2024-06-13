@@ -1,104 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="https://mingjie-portfolio.vercel.app/schema"
-           xmlns="https://mingjie-portfolio.vercel.app/schema"
-           elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+    <!-- Root element -->
     <xs:element name="resume">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="personalInfo">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="name" type="xs:string"/>
-                            <xs:element name="age" type="xs:integer"/>
-                            <xs:element name="phone" type="xs:string"/>
-                            <xs:element name="address" type="xs:string"/>
-                            <xs:element name="email" type="xs:string"/>
-                            <xs:element name="linkedin" type="xs:string"/>
-                            <xs:element name="github" type="xs:string"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="personalInfo" type="personalInfoType"/>
                 <xs:element name="objective" type="xs:string"/>
-                <xs:element name="education">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="course" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="years" type="xs:string"/>
-                                        <xs:element name="degree" type="xs:string"/>
-                                        <xs:element name="institution" type="xs:string"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="experience">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="job" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="years" type="xs:string"/>
-                                        <xs:element name="position" type="xs:string"/>
-                                        <xs:element name="location" type="xs:string"/>
-                                        <xs:element name="tasks">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="task" type="xs:string" maxOccurs="unbounded"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="skills">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="skill" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="category" type="xs:string"/>
-                                        <xs:element name="details">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="detail" type="xs:string" maxOccurs="unbounded"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="projects">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="schoolProjects">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="project" type="xs:string" maxOccurs="unbounded"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                            <xs:element name="personalProjects">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="project" type="xs:string" maxOccurs="unbounded"/>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="education" type="educationType"/>
+                <xs:element name="experience" type="experienceType"/>
+                <xs:element name="skills" type="skillsType"/>
+                <xs:element name="projects" type="projectsType"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <!-- personalInfo type definition -->
+    <xs:complexType name="personalInfoType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="age" type="xs:integer"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="address" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="linkedin" type="xs:string"/>
+            <xs:element name="github" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- education type definition -->
+    <xs:complexType name="educationType">
+        <xs:sequence>
+            <xs:element name="course" maxOccurs="unbounded" type="courseType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="courseType">
+        <xs:sequence>
+            <xs:element name="years" type="xs:string"/>
+            <xs:element name="degree" type="xs:string"/>
+            <xs:element name="institution" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- experience type definition -->
+    <xs:complexType name="experienceType">
+        <xs:sequence>
+            <xs:element name="job" maxOccurs="unbounded" type="jobType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="jobType">
+        <xs:sequence>
+            <xs:element name="years" type="xs:string"/>
+            <xs:element name="position" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="tasks" type="tasksType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tasksType">
+        <xs:sequence>
+            <xs:element name="task" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- skills type definition -->
+    <xs:complexType name="skillsType">
+        <xs:sequence>
+            <xs:element name="skill" maxOccurs="unbounded" type="skillType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="skillType">
+        <xs:sequence>
+            <xs:element name="category" type="xs:string"/>
+            <xs:element name="details" type="detailsType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="detailsType">
+        <xs:sequence>
+            <xs:element name="detail" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- projects type definition -->
+    <xs:complexType name="projectsType">
+        <xs:sequence>
+            <xs:element name="schoolProjects" type="projectsGroupType"/>
+            <xs:element name="personalProjects" type="projectsGroupType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="projectsGroupType">
+        <xs:sequence>
+            <xs:element name="project" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
 </xs:schema>
