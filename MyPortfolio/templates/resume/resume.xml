@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
 <resume xmlns="http://mingjie-portfolio.vercel.app/resume"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="https://mingjie-portfolio.vercel.app/static/resume/resume.xsd">
+        xsi:schemaLocation="http://mingjie-portfolio.vercel.app/resume /path/to/your/resume.xsd">
     <personalInfo>
         <name>Mingjie Zhang</name>
         <age>21</age>
