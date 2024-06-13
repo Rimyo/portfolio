@@ -71,7 +71,7 @@ def resume_view(request):
     # Add the original XML declaration and stylesheet declaration manually
     xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
     xml_stylesheet = '<?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>\n'
-    dtd = '<!DOCTYPE resume SYSTEM "/static/resume/resume.dtd">\n'
+    dtd = '<!DOCTYPE resume SYSTEM "https://mingjie-portfolio.vercel.app/static/resume/resume.dtd">\n'
     full_xml_str = f"{xml_declaration}{xml_stylesheet}{dtd}{xml_str}"
 
     # Return the XML content as a response
