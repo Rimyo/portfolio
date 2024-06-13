@@ -23,10 +23,11 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('resume/', views.resume_view, name='resume'),
     path('i18n/', include('django.conf.urls.i18n')),  
     path('set_language/', views.set_language, name='set_language'),
+    path('', views.home, name='home'),
+    path('resume/', views.resume_view, name='resume'),
+    path('books/', ),
 ]
 
 if settings.DEBUG:

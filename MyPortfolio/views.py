@@ -76,6 +76,13 @@ def resume_view(request):
     # Return the XML content as a response
     return HttpResponse(full_xml_str, content_type='application/xml')
 
+def books(request):
+    xml_file_path = os.path.join('MyPortfolio', 'templates', 'book.xml')
+    with open(xml_file_path, 'rb') as xml_file:
+        xml_content = xml_file.read()
+        
+    return render(xml_content, content_type='application/xml')
+
 def home(request):
     context = {
         'LANGUAGE_CODE': get_language(),
