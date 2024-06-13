@@ -27,7 +27,7 @@ urlpatterns = [
     path('set_language/', views.set_language, name='set_language'),
     path('', views.home, name='home'),
     path('resume/', views.resume_view, name='resume'),
-    path('books/', ),
+    path('books/', views.books, name='books'),
 ]
 
 if settings.DEBUG:
