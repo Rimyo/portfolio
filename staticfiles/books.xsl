@@ -2,10 +2,13 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:ex="https://mingjie-portfolio.vercel.app/books"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
+>
+    
+    <xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN" 
+                doctype-system="http://www.w3.org/TR/html4/loose.dtd"
+                encoding="UTF-8" indent="yes"/>
     
     <xsl:template match="/">
-        <!DOCTYPE>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
             <head>
                 <title>Book Catalog</title>
