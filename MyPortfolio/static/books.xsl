@@ -4,7 +4,7 @@
     <xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01 Transitional//EN"/>
     
     <xsl:template match="/">
-        <html>
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
             <head>
                 <title>Book Catalog</title>
             </head>

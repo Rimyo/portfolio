@@ -5,7 +5,7 @@
                 doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
                 indent="yes"/>
     <xsl:template match="/">
-        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="fr">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
             <head>
                 <title>Resume of Mingjie Zhang</title>
                 <link rel="stylesheet" type="text/css" href="/static/resume/resume.css"/>
