@@ -4,15 +4,15 @@
     xmlns:ex="https://mingjie-portfolio.vercel.app/books"
     xmlns="http://www.w3.org/1999/xhtml">
     
-    <xsl:output method="html" doctype-system="about:legacy-compat" encoding="UTF-8" indent="yes"/>
+    <xsl:output method="xml" doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN" 
+                doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"
+                encoding="UTF-8" indent="yes"/>
     
     <xsl:template match="/">
-        <!-- Explicitly add the HTML5 DOCTYPE -->
-        <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
             <head>
                 <title>Book Catalog</title>
-                <meta charset="UTF-8"/>
+                <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8"/>
             </head>
             <body>
                 <h2>Book Catalog</h2>
