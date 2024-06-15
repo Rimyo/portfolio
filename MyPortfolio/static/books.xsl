@@ -2,17 +2,17 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:ex="https://mingjie-portfolio.vercel.app/books"
-    xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-    <!-- Remove xsl:output doctype configuration -->
+    xmlns="http://www.w3.org/1999/xhtml">
     
+    <xsl:output method="html" doctype-system="" encoding="UTF-8" indent="yes"/>
+
     <xsl:template match="/">
-        <!-- Explicitly add the minimal DOCTYPE declaration -->
+        <!-- Explicitly add the HTML5 DOCTYPE -->
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
         <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
             <head>
                 <title>Book Catalog</title>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+                <meta charset="UTF-8"/>
             </head>
             <body>
                 <h2>Book Catalog</h2>
