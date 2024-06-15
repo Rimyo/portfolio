@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" 
+<xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:ex="https://mingjie-portfolio.vercel.app/books"
     xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    
-    <!-- Removing xsl:output to handle DOCTYPE manually -->
+
+    <!-- Remove xsl:output doctype configuration -->
     
     <xsl:template match="/">
-        <!-- Explicitly add the DOCTYPE declaration -->
+        <!-- Explicitly add the minimal DOCTYPE declaration -->
         <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
             <head>
                 <title>Book Catalog</title>
                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
