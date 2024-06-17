@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .profile-card {
+            background-color: #f2e9e1;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .profile-card p {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: #333;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .main-content h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .main-content h2 {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .main-content .buttons {
+            margin: 20px 0;
+        }
+        .main-content .buttons a {
+            padding: 10px 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+        }
+        .main-content .buttons a.cv {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+        .main-content p {
+            color: #666;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-card">
+            <img src="path_to_image.jpg" alt="Jade Aubrey">
+            <h2>Jade Aubrey</h2>
+            <p>CHEF DE PROJET</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1>Hello</h1>
+            <h2>Qui je suis et ce que je fais</h2>
+            <div class="buttons">
+                <a href="#" class="cv">CV</a>
+                <a href="#" class="projects">PROJETS</a>
+            </div>
+            <p>Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.</p>
+            <p>Relatez ici votre parcours et présentez votre activité à vos visiteurs.</p>
+        </div>
+    </div>
+</body>
+</html>

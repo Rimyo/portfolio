@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar {
+    background-color: #a38f7d;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 120px;
+}
+
+.navbar img.flag {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.content {
+    padding: 20px;
+    margin-top: 140px; /* Adjusted margin for fixed navbar */
+}
+
+.styled-link {
+    text-decoration: none;
+    color: #000; /* Initial color */
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.styled-link:visited {
+    color: #000; /* Color when visited */
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: grid;
+    box-sizing: border-box;
+}
+
+.footer .column {
+    position: relative;
+    text-align: center;
+}
+
+.footer .column h4 {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.footer .column p,
+.footer .column a {
+    margin: 5px 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer .column .social-links a {
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.left-panel {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #d4b89d;
+}
+
+.right-panel {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    z-index: 10;
+    max-width: 900px;
+}
+
+.profile-card {
+    position: relative;
+    background-color: #f2e9e1;
+    text-align: center;
+    left: 0;
+    width: 40%;
+    height: 526px;
+    box-shadow: -18px 18px 36px #949494;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: gray;
+}
+
+.social-links {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px;
+    width: 50%;
+    right: 0;
+}
+
+.main-content h1 {
+    font-size: 6em;
+    margin: 0;
+}
+
+.main-content h2 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.main-content .buttons {
+    margin: 20px 0;
+}
+
+.main-content .buttons a {
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content .buttons a.cv {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.main-content p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.cv-button, .projects-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.cv-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.projects-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #000000;
+}
+
+.paragraph {
+    margin-top: 20px;
+    line-height: 1.6;
+}

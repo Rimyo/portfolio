@@ -27,6 +27,14 @@ def translate_xml_element(element):
     for child in element:
         translate_xml_element(child)
 
+import os
+from django.http import HttpResponse
+from lxml import etree
+
+import os
+from django.http import HttpResponse
+from lxml import etree
+
 def resume_view(request):
     xml_file_path = os.path.join('MyPortfolio', 'templates', 'resume', 'resume.xml')
 
@@ -35,46 +43,31 @@ def resume_view(request):
         xml_content = xml_file.read()
 
     # Parse the XML content
-    root = ET.fromstring(xml_content)
+    parser = etree.XMLParser(remove_blank_text=True)
+    root = etree.fromstring(xml_content, parser)
 
-    # Translate the text nodes
-    translate_xml_element(root)
+    # Get the language from the request (you might need to adjust this based on your setup)
+    lang = request.LANGUAGE_CODE
 
-    # Translate specific section headings
-    for section in root.findall(".//objective"):
-        section.set('translatedTitle', _('Objectif'))
-    print()
+    # Find the <lang> element and update its value
+    lang_element = root.find('.//lang')
+    if lang_element is not None:
+        lang_element.text = lang
+    if(lang == 'zh-hans'):
+        lang_element.text = 'zh'
+        print(lang)
 
-    for section in root.findall(".//education"):
-        section.set('translatedTitle', _('Éducation'))
-        
-    for section in root.findall(".//skills"):
-        section.set('translatedTitle', _('Compétences'))
+    # Convert the modified XML back to a string, including the XML declaration and stylesheet
+    xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>'
+    xml_stylesheet = '<?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>'
+    xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
-    for section in root.findall(".//experience"):
-        section.set('translatedTitle', _('Expériences Professionnelles'))
-        
-    for section in root.findall(".//projects"):
-        section.set('translatedTitle', _('Projets'))
-        for sub_section in section.findall(".//schoolProjects"):
-            sub_section.set('translatedTitle', _('Projets scolaires'))
-        for sub_section in section.findall(".//personalProjects"):
-            sub_section.set('translatedTitle', _('Projets personnels'))
+    # Combine the declaration, stylesheet, and XML content
+    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\n{xml_string}"
 
-    for section in root.findall(".//personalInfo"):
-        for sub_section in section.findall(".//name"):
-            sub_section.set('translatedTitle', _('Nom'))
-
-    # Convert the XML tree to a string without the XML declaration
-    xml_str = ET.tostring(root, encoding='unicode', method='xml')
-
-    # Add the original XML declaration and stylesheet declaration manually
-    xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>\n'
-    xml_stylesheet = '<?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>\n'
-    full_xml_str = f"{xml_declaration}{xml_stylesheet}{xml_str}"
-
-    # Return the XML content as a response
+    # Return the modified XML as the response
     return HttpResponse(full_xml_str, content_type='application/xml')
+
 
 def books(request):
     xml_file_path = os.path.join('MyPortfolio', 'templates', 'books.xml')

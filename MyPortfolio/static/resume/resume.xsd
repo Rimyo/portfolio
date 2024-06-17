@@ -5,8 +5,9 @@
     <xs:element name="resume">
         <xs:complexType>
             <xs:sequence>
+                <xs:element name="page" type="pageType"/>
                 <xs:element name="personalInfo" type="personalInfoType"/>
-                <xs:element name="objective" type="xs:string"/>
+                <xs:element name="presentation" type="multiLangType"/>
                 <xs:element name="education" type="educationType"/>
                 <xs:element name="experience" type="experienceType"/>
                 <xs:element name="skills" type="skillsType"/>
@@ -15,13 +16,30 @@
         </xs:complexType>
     </xs:element>
 
+    <!-- page type definition -->
+    <xs:complexType name="pageType">
+        <xs:sequence>
+            <xs:element name="lang" type="xs:string"/>
+            <xs:element name="title" type="multiLangType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- multi-language type definition -->
+    <xs:complexType name="multiLangType">
+        <xs:sequence>
+            <xs:element name="en" type="xs:string"/>
+            <xs:element name="fr" type="xs:string"/>
+            <xs:element name="cn" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
     <!-- personalInfo type definition -->
     <xs:complexType name="personalInfoType">
         <xs:sequence>
-            <xs:element name="name" type="xs:string"/>
+            <xs:element name="name" type="multiLangType"/>
             <xs:element name="age" type="xs:integer"/>
             <xs:element name="phone" type="xs:string"/>
-            <xs:element name="address" type="xs:string"/>
+            <xs:element name="address" type="multiLangType"/>
             <xs:element name="email" type="xs:string"/>
             <xs:element name="linkedin" type="xs:string"/>
             <xs:element name="github" type="xs:string"/>
@@ -38,8 +56,8 @@
     <xs:complexType name="courseType">
         <xs:sequence>
             <xs:element name="years" type="xs:string"/>
-            <xs:element name="degree" type="xs:string"/>
-            <xs:element name="institution" type="xs:string"/>
+            <xs:element name="degree" type="multiLangType"/>
+            <xs:element name="institution" type="multiLangType"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -53,15 +71,15 @@
     <xs:complexType name="jobType">
         <xs:sequence>
             <xs:element name="years" type="xs:string"/>
-            <xs:element name="position" type="xs:string"/>
-            <xs:element name="location" type="xs:string"/>
+            <xs:element name="position" type="multiLangType"/>
+            <xs:element name="location" type="multiLangType"/>
             <xs:element name="tasks" type="tasksType"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="tasksType">
         <xs:sequence>
-            <xs:element name="task" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="task" maxOccurs="unbounded" type="multiLangType"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -74,14 +92,14 @@
 
     <xs:complexType name="skillType">
         <xs:sequence>
-            <xs:element name="category" type="xs:string"/>
+            <xs:element name="category" type="multiLangType"/>
             <xs:element name="details" type="detailsType"/>
         </xs:sequence>
     </xs:complexType>
 
     <xs:complexType name="detailsType">
         <xs:sequence>
-            <xs:element name="detail" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="detail" maxOccurs="unbounded" type="multiLangType"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -95,8 +113,7 @@
 
     <xs:complexType name="projectsGroupType">
         <xs:sequence>
-            <xs:element name="project" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="project" maxOccurs="unbounded" type="multiLangType"/>
         </xs:sequence>
     </xs:complexType>
-
 </xs:schema>

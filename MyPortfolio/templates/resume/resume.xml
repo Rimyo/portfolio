@@ -2,82 +2,244 @@
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
 <resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
         xsi:noNamespaceSchemaLocation="https://mingjie-portfolio.vercel.app/static/resume/resume.xsd">
+    <page>
+        <lang>en</lang>
+        <title>
+            <en>Resume</en>
+            <fr>Curriculum Vitae</fr>
+            <zh>简历</zh>
+        </title>
+    </page>
     <personalInfo>
-        <name>Mingjie Zhang</name>
-        <age>21</age>
+        <name>
+            <en>Mingjie Zhang</en>
+            <fr>Mingjie Zhang</fr>
+            <zh>张明杰</zh>
+        </name>
+        <age>22</age>
         <phone>06 05 72 57 82</phone>
-        <address>4 Rue Césaria Evora, 93300 Aubervilliers</address>
+        <address>
+            <en>4 Rue Césaria Evora, 93300 Aubervilliers</en>
+            <fr>4 Rue Césaria Evora, 93300 Aubervilliers</fr>
+            <zh>4号 Césaria Evora 街, 93300 奥贝维利耶</zh>
+        </address>
         <email>mingjie.zhang.pro@gmail.com</email>
         <linkedin>https://www.linkedin.com/in/mingjie-zhang-300ab9267/</linkedin>
         <github>https://github.com/Rimyo</github>
     </personalInfo>
-    <objective>
-        A la recherche d’un contrat d’apprentissage de 24 mois, à raison d’un mois sur deux en entreprise, dès septembre 2023
-    </objective>
+    <presentation>
+        <en>I am a computer engineering apprentice passionate about video game and web application development. I have acquired skills in programming and software design through my studies and personal projects.</en>
+        <fr>Je suis un apprenti ingénieur informatique passionné par le développement de jeux vidéos et d'applications web. J'ai acquis des compétences en programmation et en conception de logiciels grâce à mes études et à mes projets personnels.</fr>
+        <zh>我是一名计算机工程学徒，热衷于视频游戏和网络应用开发。我通过学习和个人项目获得了编程和软件设计方面的技能。</zh>
+    </presentation>
     <education>
         <course>
-            <years>2022 - 2025</years>
-            <degree>Cursus Ingénieur Informatique</degree>
-            <institution>Sup Galilée, Villetaneuse</institution>
+            <years>
+                <en>2022 - 2025</en>
+                <fr>2022 - 2025</fr>
+                <zh>2022 - 2025</zh>
+            </years>
+            <degree>
+                <en>Computer Engineering Curriculum</en>
+                <fr>Cursus Ingénieur Informatique</fr>
+                <zh>计算机工程课程</zh>
+            </degree>
+            <institution>
+                <en>Sup Galilée, Villetaneuse</en>
+                <fr>Sup Galilée, Villetaneuse</fr>
+                <zh>Sup Galilée, 维尔塔讷斯</zh>
+            </institution>
         </course>
         <course>
-            <years>2020 - 2022</years>
-            <degree>Cursus préparatoire d'ingénieur intégré</degree>
-            <institution>Sup Galilée, Villetaneuse</institution>
+            <years>
+                <en>2020 - 2022</en>
+                <fr>2020 - 2022</fr>
+                <zh>2020 - 2022</zh>
+            </years>
+            <degree>
+                <en>Integrated Engineering Preparatory Course</en>
+                <fr>Cursus préparatoire d'ingénieur intégré</fr>
+                <zh>综合工程预科课程</zh>
+            </degree>
+            <institution>
+                <en>Sup Galilée, Villetaneuse</en>
+                <fr>Sup Galilée, Villetaneuse</fr>
+                <zh>Sup Galilée, 维尔塔讷斯</zh>
+            </institution>
         </course>
         <course>
-            <years>2017 - 2020</years>
-            <degree>Baccalauréat Scientifique</degree>
-            <institution>Lycée Hélène Boucher, Paris</institution>
+            <years>
+                <en>2017 - 2020</en>
+                <fr>2017 - 2020</fr>
+                <zh>2017 - 2020</zh>
+            </years>
+            <degree>
+                <en>Scientific Baccalaureate</en>
+                <fr>Baccalauréat Scientifique</fr>
+                <zh>科学学士学位</zh>
+            </degree>
+            <institution>
+                <en>Lycée Hélène Boucher, Paris</en>
+                <fr>Lycée Hélène Boucher, Paris</fr>
+                <zh>巴黎Hélène Boucher高中</zh>
+            </institution>
         </course>
     </education>
     <experience>
         <job>
-            <years>09/2023 - 08/2025</years>
-            <position>Développeur Python, fullstack | BNP Paribas Arbitrage</position>
-            <location>Paris (75), Montreuil (93)</location>
+            <years>
+                <en>09/2023 - 08/2025</en>
+                <fr>09/2023 - 08/2025</fr>
+                <zh>2023年9月 - 2025年8月</zh>
+            </years>
+            <position>
+                <en>Python Fullstack Developer | BNP Paribas Arbitrage</en>
+                <fr>Développeur Python, fullstack | BNP Paribas Arbitrage</fr>
+                <zh>Python全栈开发者 | 法国巴黎银行套利</zh>
+            </position>
+            <location>
+                <en>Paris (75), Montreuil (93)</en>
+                <fr>Paris (75), Montreuil (93)</fr>
+                <zh>巴黎 (75)，蒙特勒伊 (93)</zh>
+            </location>
             <tasks>
-                <task>tâche 1</task>
-                <task>tâche 2</task>
-                <task>tâche 3</task>
-                <task>tâche 4</task>
+                <task>
+                    <en>Task 1</en>
+                    <fr>tâche 1</fr>
+                    <zh>任务1</zh>
+                </task>
+                <task>
+                    <en>Task 2</en>
+                    <fr>tâche 2</fr>
+                    <zh>任务2</zh>
+                </task>
+                <task>
+                    <en>Task 3</en>
+                    <fr>tâche 3</fr>
+                    <zh>任务3</zh>
+                </task>
+                <task>
+                    <en>Task 4</en>
+                    <fr>tâche 4</fr>
+                    <zh>任务4</zh>
+                </task>
             </tasks>
         </job>
     </experience>
     <skills>
         <skill>
-            <category>Langues</category>
+            <category>
+                <en>Languages</en>
+                <fr>Langues</fr>
+                <zh>语言</zh>
+            </category>
             <details>
-                <detail>Chinois : bilingue</detail>
-                <detail>Anglais : courant</detail>
-                <detail>Espagnol : débutant</detail>
+                <detail>
+                    <en>Chinese: bilingual</en>
+                    <fr>Chinois : bilingue</fr>
+                    <zh>中文：双语</zh>
+                </detail>
+                <detail>
+                    <en>English: fluent</en>
+                    <fr>Anglais : courant</fr>
+                    <zh>英语：流利</zh>
+                </detail>
+                <detail>
+                    <en>Spanish: beginner</en>
+                    <fr>Espagnol : débutant</fr>
+                    <zh>西班牙语：初级</zh>
+                </detail>
             </details>
         </skill>
         <skill>
-            <category>Compétences informatiques</category>
+            <category>
+                <en>Computer Skills</en>
+                <fr>Compétences informatiques</fr>
+                <zh>计算机技能</zh>
+            </category>
             <details>
-                <detail>Web: HTML / CSS / JavaScript / Django / XML</detail>
-                <detail>Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS</detail>
-                <detail>Moteur de Jeu: Unity</detail>
-                <detail>Conception: UML, Design Pattern</detail>
-                <detail>Logiciel: RStudio, WireShark</detail>
-                <detail>Donnée: SQL (Oracle)</detail>
-                <detail>Autre: Git, Excel, Linux</detail>
+                <detail>
+                    <en>Web: HTML / CSS / JavaScript / Django / XML / React.js</en>
+                    <fr>Web: HTML / CSS / JavaScript / Django / XML / React.js</fr>
+                    <zh>Web：HTML / CSS / JavaScript / Django / XML / React.js</zh>
+                </detail>
+                <detail>
+                    <en>Languages: C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</en>
+                    <fr>Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</fr>
+                    <zh>编程语言：C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</zh>
+                </detail>
+                <detail>
+                    <en>Game Engine: Unity</en>
+                    <fr>Moteur de Jeu: Unity</fr>
+                    <zh>游戏引擎：Unity</zh>
+                </detail>
+                <detail>
+                    <en>Design: UML, Design Pattern</en>
+                    <fr>Conception: UML, Design Pattern</fr>
+                    <zh>设计：UML，设计模式</zh>
+                </detail>
+                <detail>
+                    <en>Software: RStudio, WireShark, Packet Tracer</en>
+                    <fr>Logiciel: RStudio, WireShark, Packet tracer</fr>
+                    <zh>软件：RStudio，WireShark，Packet Tracer</zh>
+                </detail>
+                <detail>
+                    <en>Data: SQL</en>
+                    <fr>Donnée: SQL</fr>
+                    <zh>数据：SQL</zh>
+                </detail>
+                <detail>
+                    <en>Others: Git, Excel, Linux</en>
+                    <fr>Autre: Git, Excel, Linux</fr>
+                    <zh>其他：Git，Excel，Linux</zh>
+                </detail>
             </details>
         </skill>
     </skills>
     <projects>
         <schoolProjects>
-            <project>Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C</project>
-            <project>Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C</project>
-            <project>Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19</project>
-            <project>Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C</project>
-            <project>Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population</project>
-            <project>Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java</project>
+            <project>
+                <en>Design and development of an RPG (Role Playing Game) using a graphical library in C</en>
+                <fr>Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C</fr>
+                <zh>使用C语言图形库设计和开发RPG（角色扮演游戏）</zh>
+            </project>
+            <project>
+                <en>Development of the Mastermind game using the GTK3 library with an MVC (Model-View-Controller) pattern in C</en>
+                <fr>Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C</fr>
+                <zh>使用GTK3库和MVC（模型-视图-控制器）模式开发Mastermind游戏</zh>
+            </project>
+            <project>
+                <en>Data analysis in R to find a correlation between the music listened to by the French and the COVID-19 lockdowns</en>
+                <fr>Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19</fr>
+                <zh>使用R进行数据分析，寻找法国人听的音乐与COVID-19封锁之间的相关性</zh>
+            </project>
+            <project>
+                <en>Design and development of a program to calculate the shortest route between 2 metro stations in C</en>
+                <fr>Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C</fr>
+                <zh>设计和开发计算两地铁站之间最短路线的程序（使用C语言）</zh>
+            </project>
+            <project>
+                <en>Modeling and design of a mobile application to track the evolution of an epidemic within a population</en>
+                <fr>Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population</fr>
+                <zh>建模和设计一个移动应用程序，用于跟踪人群中疫情的发展</zh>
+            </project>
+            <project>
+                <en>Design, modeling, and development of a program to simulate an ecosystem in Java</en>
+                <fr>Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java</fr>
+                <zh>设计、建模和开发一个Java程序来模拟生态系统</zh>
+            </project>
         </schoolProjects>
         <personalProjects>
-            <project>Apprentissage de C# et de Unity</project>
-            <project>Conception et réalisation de prototypes de jeux vidéos</project>
+            <project>
+                <en>Learning C# and Unity</en>
+                <fr>Apprentissage de C# et de Unity</fr>
+                <zh>学习C#和Unity</zh>
+            </project>
+            <project>
+                <en>Design and development of video game prototypes</en>
+                <fr>Conception et réalisation de prototypes de jeux vidéos</fr>
+                <zh>设计和开发视频游戏原型</zh>
+            </project>
         </personalProjects>
     </projects>
 </resume>

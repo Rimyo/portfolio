@@ -1,58 +1,27 @@
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
+    {% load i18n %}
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}My Website{% endblock %}</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .navbar {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            box-sizing: border-box;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        .navbar img.flag {
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-            margin: 0 5px;
-        }
-        .content {
-            padding: 20px;
-            margin: 60px 0 0 0;
-        }
-    </style>
-    {% load i18n %}
-    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
     <div class="navbar">
         <div>
-            <!-- Your website logo or name -->
-            <a href="{% url 'home' %}"><span>My Website</span></a>
+            <a href="{% url 'home' %}" class="styled-link"><span>Mingjie Zhang / Apprenti ingénieur informatique</span></a>
         </div>
         <div>
-            <!-- Language selection flags -->
             <form id="language_form" method="post" action="{% url 'set_language' %}">
                 {% csrf_token %}
                 <input type="hidden" name="next" value="{{ request.get_full_path }}" />
                 <input type="hidden" id="language_input" name="language" />
                 <img src="{% static 'flags/en.svg' %}" class="flag" onclick="changeLanguage('en')" alt="English"/>
                 <img src="{% static 'flags/fr.svg' %}" class="flag" onclick="changeLanguage('fr')" alt="Français"/>
-                <img src="{% static 'flags/cn.svg' %}" class="flag" onclick="changeLanguage('zh-hans')" alt="中文"/>
+                <img src="{% static 'flags/zh.svg' %}" class="flag" onclick="changeLanguage('zh-hans')" alt="中文"/>
             </form>
         </div>
     </div>
@@ -67,4 +36,22 @@
         }
     </script>
 </body>
+<div class="footer">
+    <div class="column">
+        <h4>Tel</h4>
+        <p>01 23 45 67 89</p>
+    </div>
+    <div class="column">
+        <h4>E-mail</h4>
+        <p><a href="mailto:mingjie.zhang.pro@gmail.com">mingjie.zhang.pro@gmail.com</a></p>
+    </div>
+    <div class="column">
+        <h4>En ligne</h4>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><i class="fab fa-github-f"></i></a>
+            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+
+        </div>
+    </div>
+</div>
 </html>
