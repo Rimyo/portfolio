@@ -231,7 +231,7 @@
                                 </xsl:for-each>
                             </ul>
                         </div>
-                        <div class="section interets">
+                        <div class="section interests">
                             <h2>
                                 <xsl:choose>
                                     <xsl:when test="$lang='en'">Interests</xsl:when>
@@ -240,7 +240,7 @@
                                 </xsl:choose>
                             </h2>
                             <ul>
-                                <xsl:for-each select="resume/interets/interest">
+                                <xsl:for-each select="resume/interests/interest">
                                     <li><xsl:value-of select="*[local-name()=$lang]"/></li>
                                 </xsl:for-each>
                             </ul>
