@@ -1,37 +1,47 @@
-<!ELEMENT resume (personalInfo, objective, education, experience, skills, projects)>
+<!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interets, projects)>
+<!ELEMENT page (lang, title)>
+<!ELEMENT lang (#PCDATA)>
+<!ELEMENT title (en, fr, zh)>
+<!ELEMENT en (#PCDATA)>
+<!ELEMENT fr (#PCDATA)>
+<!ELEMENT zh (#PCDATA)>
 
-<!ELEMENT personalInfo (name, age, phone, address, email, linkedin, github)>
-<!ELEMENT name (#PCDATA)>
-<!ELEMENT age (#PCDATA)>
+<!ELEMENT personalInfo (name, birthdate, phone, email, linkedin, github)>
+<!ELEMENT name (en, fr, zh)>
+<!ELEMENT birthdate (#PCDATA)>
 <!ELEMENT phone (#PCDATA)>
-<!ELEMENT address (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT linkedin (#PCDATA)>
 <!ELEMENT github (#PCDATA)>
 
-<!ELEMENT objective (#PCDATA)>
+<!ELEMENT presentation (en, fr, zh)>
 
 <!ELEMENT education (course+)>
 <!ELEMENT course (years, degree, institution)>
-<!ELEMENT years (#PCDATA)>
-<!ELEMENT degree (#PCDATA)>
-<!ELEMENT institution (#PCDATA)>
+<!ELEMENT years (en, fr, zh)>
+<!ELEMENT degree (en, fr, zh)>
+<!ELEMENT institution (en, fr, zh)>
 
 <!ELEMENT experience (job+)>
 <!ELEMENT job (years, position, location, tasks)>
-<!ELEMENT position (#PCDATA)>
-<!ELEMENT location (#PCDATA)>
-<!ELEMENT years (#PCDATA)>
+<!ELEMENT position (en, fr, zh)>
+<!ELEMENT location (en, fr, zh)>
 <!ELEMENT tasks (task+)>
-<!ELEMENT task (#PCDATA)>
+<!ELEMENT task (en, fr, zh)>
 
 <!ELEMENT skills (skill+)>
 <!ELEMENT skill (category, details)>
-<!ELEMENT category (#PCDATA)>
+<!ELEMENT category (en, fr, zh)>
 <!ELEMENT details (detail+)>
-<!ELEMENT detail (#PCDATA)>
+<!ELEMENT detail (en, fr, zh)>
 
-<!ELEMENT projects (schoolProjects, personalProjects)>
-<!ELEMENT schoolProjects (project+)>
-<!ELEMENT personalProjects (project+)>
-<!ELEMENT project (#PCDATA)>
+<!ELEMENT languages (language+)>
+<!ELEMENT language (name, level)>
+<!ELEMENT name (en, fr, zh)>
+<!ELEMENT level (en, fr, zh)>
+
+<!ELEMENT interets (interest+)>
+<!ELEMENT interest (en, fr, zh)>
+
+<!ELEMENT projects (project+)>
+<!ELEMENT project (en, fr, zh)>
