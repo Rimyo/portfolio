@@ -64,7 +64,7 @@ def resume_view(request):
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
-    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\n{dtd}\n{xml_string}"
+    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\n{xml_string}"
 
     # Return the modified XML as the response
     return HttpResponse(full_xml_str, content_type='application/xml')
