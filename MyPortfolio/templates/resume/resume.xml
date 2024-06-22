@@ -292,12 +292,12 @@
                 <fr>Espagnol</fr>
                 <zh>西班牙语</zh>
             </name>
+            <level>
+                <en>Basic</en>
+                <fr>débutant</fr>
+                <zh>基础</zh>
+            </level>
         </language>
-        <level>
-            <en>Basic</en>
-            <fr>Basique</fr>
-            <zh>基础</zh>
-        </level>
     </languages>
     <interests>
         <interest>
