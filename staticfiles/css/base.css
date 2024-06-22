@@ -30,10 +30,8 @@ body {
 }
 
 .content {
-    padding: 20px;
     margin-top: 140px; /* Adjusted margin for fixed navbar */
     flex-grow: 1;
-    margin-right: 260px; /* Adjusted margin to make space for sidebar */
 }
 
 .styled-link {
