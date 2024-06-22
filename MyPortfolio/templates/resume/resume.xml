@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
 <resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://mingjie-portfolio.vercel.app/resume /static/resume/schema.xsd">
+        xsi:schemaLocation="http://mingjie-portfolio.vercel.app/resume http://mingjie-portfolio.vercel.app/static/resume/schema.xsd">
     <page>
         <lang>en</lang>
         <title>
