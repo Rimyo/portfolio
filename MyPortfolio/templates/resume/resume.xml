@@ -2,6 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
 <!DOCTYPE resume SYSTEM "https://mingjie-portfolio.vercel.app/static/resume/resume.dtd">
 <resume>
+    <page>
         <lang>en</lang>
         <title>
             <en>Resume</en>
