@@ -1,8 +1,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
-    <xsl:param name="lang" select="resume/page/lang"/>
     <xsl:template match="/">
-        <html lang="{resume/page/lang}" xml:lang="{resume/page/lang}">
+        <xsl:param name="lang" select="resume/page/lang"/>
+        <html>
             <head>
                 <title>
                     <xsl:value-of select="resume/page/title/*[local-name()=$lang]"/>
