@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
-<resume xmlns="http://mingjie-portfolio.vercel.app/resume"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xsi:noNamespaceSchemaLocation="https://mingjie-portfolio.vercel.app/static/resume/resume.xsd">
+<resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://mingjie-portfolio.vercel.app/resume"
+        xsi:schemaLocation="http://mingjie-portfolio.vercel.app/resume /static/resume/schema.xsd">
     <page>
         <lang>en</lang>
         <title>
