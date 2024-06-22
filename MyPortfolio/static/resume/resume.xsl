@@ -5,8 +5,7 @@
     <xsl:param name="lang" select="resume/page/lang"/>
 
     <xsl:template match="/">
-        <html xmlns="http://mingjie-portfolio.vercel.app/resume" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://mingjie-portfolio.vercel.app/resume /static/resume/schema.xsd" lang="{resume/page/lang}" xml:lang="{resume/page/lang}">
+        <html lang="{resume/page/lang}" xml:lang="{resume/page/lang}">
             <head>
                 <title>
                     <xsl:value-of select="resume/page/title/*[local-name()=$lang]"/>
