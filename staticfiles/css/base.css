@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between; /* Ensure space for the sidebar */
 }
 
 .navbar {
-    background-color: #a38f7d;
+    background-color: #fff;
     color: white;
     padding: 10px;
     display: flex;
@@ -22,8 +23,8 @@ body {
 }
 
 .navbar img.flag {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     margin: 0 5px;
 }
@@ -31,188 +32,123 @@ body {
 .content {
     padding: 20px;
     margin-top: 140px; /* Adjusted margin for fixed navbar */
+    flex-grow: 1;
+    margin-right: 260px; /* Adjusted margin to make space for sidebar */
 }
 
 .styled-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: #000; /* Initial color */
-    font-weight: bold;
+    color: black; 
+    margin-left: 20px;
+}
+
+.styled-link #name {
+    font-weight: bold; 
+    font-size: 1.6em; 
+    color: black; 
+}
+
+.styled-link #title {
+    font-weight: normal; 
+    color: gray; 
+    margin-left: 10px; 
     font-size: 1.5em;
 }
 
-.styled-link:visited {
-    color: #000; /* Color when visited */
+.styled-link::before {
+    content: "";
+    display: inline-block;
+    width: 10px; 
+    height: 10px; 
+    background-color: blue; 
+    margin-right: 10px; 
+}
+
+.sidebar {
+    position: fixed;
+    right: 20px; /* Ensure sidebar is not touching the right border */
+    top: 180px; /* Moved down for better positioning */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Justify to the right */
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1001; /* Ensure sidebar is above other elements */
+}
+
+.sidebar-link {
+    display: block;
+    width: 140px; /* Smaller width for inactive links */
+    padding: 8px 16px; /* Smaller height for inactive links */
+    margin: 8px 0;
+    background-color: #F4E8DF; /* Light background color to match the palette */
+    color: #333; /* Darker text color for better contrast */
+    text-decoration: none;
+    border-radius: 25px; /* Smooth, round corners */
+    text-align: center;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a soft look */
+}
+
+.sidebar-link:hover {
+    width: 180px; /* Enlarge width on hover */
+    padding: 10px 20px; /* Enlarge height on hover */
+    background-color: #E0D0C1; /* Slightly darker color on hover */
+}
+
+.sidebar-link.active {
+    background-color: #C7A389; /* Color for the active link */
+    width: 200px; /* Larger width for the active link */
+    padding: 15px 25px; /* Increase padding for the active link */
+    font-weight: bold;
+    font-size: 1.2em; /* Larger font size for the active link */
+    color: #fff; /* White text for the active link */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow for active link */
 }
 
 .footer {
-    position: relative;
-    width: 100%;
-    padding: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 20px 40px; /* Adjust padding for better layout */
     background-color: #fff;
-    border-top: 1px solid #ddd;
-    display: grid;
     box-sizing: border-box;
+    z-index: 1000; /* Ensure footer is above other elements */
+    height: 300px;
 }
 
-.footer .column {
-    position: relative;
-    text-align: center;
+.footer-content {
+    display: flex;
+    justify-content: flex-end; /* Align columns to the right */
+    gap: 40px; /* Space between columns */
 }
 
-.footer .column h4 {
+.column {
+    text-align: left; /* Align text to the left */
+}
+
+.column h4 {
     margin: 5px 0;
     font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
 }
 
-.footer .column p,
-.footer .column a {
+.column p,
+.column a {
     margin: 5px 0;
-    color: #000;
+    color: #333;
     text-decoration: none;
 }
 
-.footer .column .social-links a {
+.column .Online-links a {
     margin: 0 10px;
     font-size: 1.5em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.column .Online-links a:hover {
     color: #000;
-}
-
-.left-panel {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #d4b89d;
-}
-
-.right-panel {
-    position: absolute;
-    width: 60%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    background-color: #ffffff;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    background-color: #fff;
-    z-index: 10;
-    max-width: 900px;
-}
-
-.profile-card {
-    position: relative;
-    background-color: #f2e9e1;
-    text-align: center;
-    left: 0;
-    width: 40%;
-    height: 526px;
-    box-shadow: -18px 18px 36px #949494;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-.profile-card h2 {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.profile-card h3 {
-    font-size: 18px;
-    margin: 5px 0;
-    color: gray;
-}
-
-.social-links {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    bottom: 0;
-    width: 100%;
-    background-color: #ffffff;
-}
-
-.social-links a {
-    color: #333;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.main-content {
-    padding: 20px;
-    width: 50%;
-    right: 0;
-}
-
-.main-content h1 {
-    font-size: 6em;
-    margin: 0;
-}
-
-.main-content h2 {
-    font-size: 1.2em;
-    color: #555;
-}
-
-.main-content .buttons {
-    margin: 20px 0;
-}
-
-.main-content .buttons a {
-    padding: 10px 20px;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 2px solid #333;
-    color: #333;
-    font-weight: bold;
-}
-
-.main-content .buttons a.cv {
-    background-color: #007bff;
-    color: #fff;
-    border-color: #007bff;
-}
-
-.main-content p {
-    color: #666;
-    line-height: 1.5;
-}
-
-.buttons {
-    margin: 20px 0;
-}
-
-.cv-button, .projects-button {
-    padding: 10px 20px;
-    margin-right: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 15px;
-}
-
-.cv-button {
-    background-color: #007bff;
-    color: white;
-}
-
-.projects-button {
-    background-color: white;
-    color: black;
-    border: 2px solid #000000;
-}
-
-.paragraph {
-    margin-top: 20px;
-    line-height: 1.6;
 }

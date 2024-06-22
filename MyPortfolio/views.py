@@ -82,4 +82,9 @@ def home(request):
     }
     print("context: ", context)
     return render(request, 'home.html', context)
-# Create your views here.
+
+def projects(request):
+    return render(request, 'projects.html')
+
+def contact(request):
+    return render(request, 'contact.html')

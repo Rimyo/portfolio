@@ -28,6 +28,8 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('resume/', views.resume_view, name='resume'),
     path('books/', views.books, name='books'),
+    path('projects/', views.projects, name='projects'),
+    path('contact/', views.contact, name='contact'),
 ]
 
 if settings.DEBUG:

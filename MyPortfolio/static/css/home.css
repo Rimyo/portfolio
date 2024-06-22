@@ -1,10 +1,16 @@
+html {
+    height: 100%;
+    overflow-y: scroll; /* Force vertical scrollbar */
+}
+
 body {
     margin: 0;
-    padding: 0;
+    padding: 0; /* Remove right padding to account for scrollbar width */
     font-family: Arial, sans-serif;
     min-height: 100vh; /* Allow body to stretch with content */
     display: flex;
     flex-direction: column; /* Ensure content is stacked vertically */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .left-panel, .right-panel {
@@ -17,7 +23,7 @@ body {
 .left-panel {
     width: 40%;
     left: 0;
-    background-color: #d4b89d;
+    background-color: #e6dace;
 }
 
 .right-panel {
@@ -28,29 +34,37 @@ body {
 
 .container {
     position: relative;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    background-color: #fff;
     z-index: 10;
-    max-width: 900px;
-    margin: auto; /* Center the container */
+    margin-left: 35%;
     padding: 20px;
-    overflow: auto; /* Allow container to scroll if content is too high */
+    min-height: 60vh;
+    align-items: center;
+    display: flex;
+    z-index: 10;
 }
 
 .profile-card {
-    background-color: #f2e9e1;
+    position: relative;
+    background-color: #f4ece6;
     text-align: center;
-    width: 100%;
-    box-shadow: -18px 18px 36px #949494;
-    margin-bottom: 20px;
-    padding: 20px;
+    left: 0;
+    height: 526px;
+    min-height: 526px;
+    width: 375px;
+    min-width: 375px;
+    box-shadow: -18px 18px 36px #949494bd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 205px;
+    height: 205px;
     border-radius: 50%;
+    margin-top: 40px;
+    object-fit: cover;
 }
 
 .profile-card h2 {
@@ -68,7 +82,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: auto;
+    background-color: #fff;
+    height: 53px;
+    width: 100%;
+    min-height: 53px;
 }
 
 .social-links a {
@@ -80,7 +98,8 @@ body {
 
 .main-content {
     padding: 20px;
-    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
 }
 
 .main-content h1 {
@@ -132,8 +151,9 @@ body {
 }
 
 .cv-button {
-    background-color: #007bff;
+    background-color: #0050ff;
     color: white;
+    font-style: strong;
 }
 
 .projects-button {

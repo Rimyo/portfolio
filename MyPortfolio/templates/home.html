@@ -8,24 +8,21 @@
 <div class="left-panel"></div>
 <div class="container">
     <div class="profile-card">
-        <img src="/static/cat.jpg" alt="cat" class="profile-pic">
-        <h2>Cat Nick Fury</h2>
-        <h3>CHEF DE PROJET</h3>
+        <img src="{% static 'cat.jpg' %}" alt="cat" class="profile-pic">
+        <h2>{% trans "Mingjie Zhang" %}</h2>
+        <h3>{% trans "Apprenti ingénieur informatique" %}</h3>
         <div class="social-links">
             <a href="#"><i class="fab fa-github"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
     <div class="main-content">
-        <h1>Hello</h1>
-        <p>Qui je suis et ce que je fais</p>
+        <h1>{% trans "Bonjour" %}</h1>
+        <p>{% trans "Je suis un apprenti ingénieur informatique passionné par le développement de jeux vidéos et d'applications web. J'ai acquis des compétences en programmation et en conception de logiciels grâce à mes études et à mes projets personnels." %}</p>
         <div class="buttons">
-            <button onclick="window.location.href='/resume/'" class="cv-button">CV</button>
-            <button onclick="window.location.href='/projects/'" class="projects-button">PROJETS</button>
+            <button onclick="window.location.href='/resume/'" class="cv-button">{% trans "CV" %}</button>
+            <button onclick="window.location.href='/projects/'" class="projects-button">{% trans "PROJETS" %}</button>
         </div>
-        <p class="paragraph">Paragraphe. Cliquez ici pour ajouter votre propre texte. Cliquez sur « Modifier Texte » ou double-cliquez ici pour ajouter votre contenu et personnaliser les polices.</p>
-        <p class="paragraph">Relatez ici votre parcours et présentez votre activité à vos visiteurs.</p>
     </div>
 </div>
-
 {% endblock %}

@@ -5,14 +5,16 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Website{% endblock %}</title>
+    <title>{% block title %}Portfolio{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
 </head>
 <body>
     <div class="navbar">
         <div>
-            <a href="{% url 'home' %}" class="styled-link"><span>Mingjie Zhang / Apprenti ingénieur informatique</span></a>
+            <div>
+                <a href="{% url 'home' %}" class="styled-link"><span id="name">{% trans "Mingjie Zhang" %}</span><span id="title">{% trans "/ Apprenti ingénieur informatique" %}</span></a>
+            </div>            
         </div>
         <div>
             <form id="language_form" method="post" action="{% url 'set_language' %}">
@@ -25,6 +27,12 @@
             </form>
         </div>
     </div>
+    <div class="sidebar">
+        <a href="{% url 'home' %}" class="sidebar-link {% if request.path == '/' %}active{% endif %}">{% trans "Accueil" %}</a>
+        <a href="{% url 'resume' %}" class="sidebar-link {% if request.path == '/resume/' %}active{% endif %}">{% trans "CV" %}</a>
+        <a href="{% url 'projects' %}" class="sidebar-link {% if request.path == '/projects/' %}active{% endif %}">{% trans "Projets" %}</a>
+        <a href="{% url 'contact' %}" class="sidebar-link {% if request.path == '/contact/' %}active{% endif %}">{% trans "Contacte moi" %}</a>
+    </div>
     <div class="content">
         {% block content %}
         {% endblock %}
@@ -35,23 +43,24 @@
             document.getElementById('language_form').submit();
         }
     </script>
-</body>
-<div class="footer">
-    <div class="column">
-        <h4>Tel</h4>
-        <p>01 23 45 67 89</p>
-    </div>
-    <div class="column">
-        <h4>E-mail</h4>
-        <p><a href="mailto:mingjie.zhang.pro@gmail.com">mingjie.zhang.pro@gmail.com</a></p>
-    </div>
-    <div class="column">
-        <h4>En ligne</h4>
-        <div class="social-links">
-            <a href="https://www.facebook.com"><i class="fab fa-github-f"></i></a>
-            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
-
+    <div class="footer">
+        <div class="footer-content">
+            <div class="column">
+                <h4>{% trans "Tel" %}</h4>
+                <p>06 05 72 57 82</p>
+            </div>
+            <div class="column">
+                <h4>{% trans "Email" %}</h4>
+                <p><a href="mailto:mingjie.zhang.pro@gmail.com">mingjie.zhang.pro@gmail.com</a></p>
+            </div>
+            <div class="column">
+                <h4>{% trans "En ligne" %}</h4>
+                <div class="Online-links">
+                    <a href="https://github.com/Rimyo"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mingjie-zhang-300ab9267/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</body>
 </html>

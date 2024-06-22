@@ -16,13 +16,8 @@
             <fr>Mingjie Zhang</fr>
             <zh>张明杰</zh>
         </name>
-        <age>22</age>
+        <birthdate>1 Jan 2002</birthdate>
         <phone>06 05 72 57 82</phone>
-        <address>
-            <en>4 Rue Césaria Evora, 93300 Aubervilliers</en>
-            <fr>4 Rue Césaria Evora, 93300 Aubervilliers</fr>
-            <zh>4号 Césaria Evora 街, 93300 奥贝维利耶</zh>
-        </address>
         <email>mingjie.zhang.pro@gmail.com</email>
         <linkedin>https://www.linkedin.com/in/mingjie-zhang-300ab9267/</linkedin>
         <github>https://github.com/Rimyo</github>
@@ -104,24 +99,19 @@
             </location>
             <tasks>
                 <task>
-                    <en>Task 1</en>
-                    <fr>tâche 1</fr>
-                    <zh>任务1</zh>
+                    <en>Design pattern implementation</en>
+                    <fr>Mise en œuvre de motifs de conception</fr>
+                    <zh>设计模式实现</zh>
                 </task>
                 <task>
-                    <en>Task 2</en>
-                    <fr>tâche 2</fr>
-                    <zh>任务2</zh>
+                    <en>Tests (BDD, unit, mock) implementation</en>
+                    <fr>Implémentation de tests (BDD, unité, maquette)</fr>
+                    <zh>测试（BDD、单元、模拟）实现</zh>
                 </task>
                 <task>
-                    <en>Task 3</en>
-                    <fr>tâche 3</fr>
-                    <zh>任务3</zh>
-                </task>
-                <task>
-                    <en>Task 4</en>
-                    <fr>tâche 4</fr>
-                    <zh>任务4</zh>
+                    <en>Django web application rework</en>
+                    <fr>Refonte de l'application web Django</fr>
+                    <zh>Django网络应用程序重构</zh>
                 </task>
             </tasks>
         </job>
@@ -135,111 +125,190 @@
             </category>
             <details>
                 <detail>
-                    <en>Chinese: bilingual</en>
-                    <fr>Chinois : bilingue</fr>
-                    <zh>中文：双语</zh>
-                </detail>
-                <detail>
-                    <en>English: fluent</en>
-                    <fr>Anglais : courant</fr>
-                    <zh>英语：流利</zh>
-                </detail>
-                <detail>
-                    <en>Spanish: beginner</en>
-                    <fr>Espagnol : débutant</fr>
-                    <zh>西班牙语：初级</zh>
+                    <en>C / C++ / R / C# / Java / Python / PHP / MIPS / Ocaml / Julia</en>
+                    <fr>C / C++ / R / C# / Java / Python / PHP / MIPS / Ocaml / Julia</fr>
+                    <zh>C / C++ / R / C# / Java / Python / PHP / MIPS / Ocaml / Julia</zh>
                 </detail>
             </details>
         </skill>
         <skill>
             <category>
-                <en>Computer Skills</en>
-                <fr>Compétences informatiques</fr>
-                <zh>计算机技能</zh>
+                <en>Softwares</en>
+                <fr>Logiciels</fr>
+                <zh>软件</zh>
             </category>
             <details>
                 <detail>
-                    <en>Web: HTML / CSS / JavaScript / Django / XML / React.js</en>
-                    <fr>Web: HTML / CSS / JavaScript / Django / XML / React.js</fr>
-                    <zh>Web：HTML / CSS / JavaScript / Django / XML / React.js</zh>
+                    <en>RStudio / WireShark / Matlab</en>
+                    <fr>RStudio / WireShark / Matlab</fr>
+                    <zh>RStudio / WireShark / Matlab</zh>
                 </detail>
+            </details>
+        </skill>
+        <skill>
+            <category>
+                <en>Web</en>
+                <fr>Web</fr>
+                <zh>Web</zh>
+            </category>
+            <details>
                 <detail>
-                    <en>Languages: C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</en>
-                    <fr>Langage: C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</fr>
-                    <zh>编程语言：C / R / C# / Java / Python / PHP / Matlab / MIPS / OCaml</zh>
+                    <en>HTML / CSS / JavaScript / TypeScript / Django / XML / React / Node.js / REST APIs</en>
+                    <fr>HTML / CSS / JavaScript / TypeScript / Django / XML / React / Node.js / REST APIs</fr>
+                    <zh>HTML / CSS / JavaScript / TypeScript / Django / XML / React / Node.js / REST APIs</zh>
                 </detail>
+            </details>
+        </skill>
+        <skill>
+            <category>
+                <en>Conception</en>
+                <fr>Conception</fr>
+                <zh>设计</zh>
+            </category>
+            <details>
                 <detail>
-                    <en>Game Engine: Unity</en>
-                    <fr>Moteur de Jeu: Unity</fr>
-                    <zh>游戏引擎：Unity</zh>
+                    <en>UML / Design Pattern / Linear and combinatory optimisation / Agile/Scrum</en>
+                    <fr>UML / Design Pattern / Optimisation linéaire et combinatoire / Agile/Scrum</fr>
+                    <zh>UML / 设计模式 / 线性和组合优化 / 敏捷/Scrum</zh>
                 </detail>
+            </details>
+        </skill>
+        <skill>
+            <category>
+                <en>Data</en>
+                <fr>Données</fr>
+                <zh>数据</zh>
+            </category>
+            <details>
                 <detail>
-                    <en>Design: UML, Design Pattern</en>
-                    <fr>Conception: UML, Design Pattern</fr>
-                    <zh>设计：UML，设计模式</zh>
+                    <en>SQL (Oracle)</en>
+                    <fr>SQL (Oracle)</fr>
+                    <zh>SQL (Oracle)</zh>
                 </detail>
+            </details>
+        </skill>
+        <skill>
+            <category>
+                <en>Else</en>
+                <fr>Autre</fr>
+                <zh>其他</zh>
+            </category>
+            <details>
                 <detail>
-                    <en>Software: RStudio, WireShark, Packet Tracer</en>
-                    <fr>Logiciel: RStudio, WireShark, Packet tracer</fr>
-                    <zh>软件：RStudio，WireShark，Packet Tracer</zh>
-                </detail>
-                <detail>
-                    <en>Data: SQL</en>
-                    <fr>Donnée: SQL</fr>
-                    <zh>数据：SQL</zh>
-                </detail>
-                <detail>
-                    <en>Others: Git, Excel, Linux</en>
-                    <fr>Autre: Git, Excel, Linux</fr>
-                    <zh>其他：Git，Excel，Linux</zh>
+                    <en>Git, Excel, Linux, LDAP, Cplex, Unity / CI/CD / Jira</en>
+                    <fr>Git, Excel, Linux, LDAP, Cplex, Unity / CI/CD / Jira</fr>
+                    <zh>Git, Excel, Linux, LDAP, Cplex, Unity / CI/CD / Jira</zh>
                 </detail>
             </details>
         </skill>
     </skills>
+    <languages>
+        <language>
+            <name>
+                <en>French</en>
+                <fr>Français</fr>
+                <zh>法语</zh>
+            </name>
+            <level>
+                <en>Fluent</en>
+                <fr>Courant</fr>
+                <zh>流利</zh>
+            </level>
+        </language>
+        <language>
+            <name>
+                <en>English</en>
+                <fr>Anglais</fr>
+                <zh>英语</zh>
+            </name>
+            <level>
+                <en>Fluent</en>
+                <fr>Courant</fr>
+                <zh>流利</zh>
+            </level>
+        </language>
+        <language>
+            <name>
+                <en>Chinese</en>
+                <fr>Chinois</fr>
+                <zh>中文</zh>
+            </name>
+            <level>
+                <en>Native</en>
+                <fr>Maternel</fr>
+                <zh>母语</zh>
+            </level>
+        </language>
+        <language>
+            <name>
+                <en>Spanish</en>
+                <fr>Espagnol</fr>
+                <zh>西班牙语</zh>
+            </name>
+        </language>
+        <level>
+            <en>Basic</en>
+            <fr>Basique</fr>
+            <zh>基础</zh>
+        </level>
+    </languages>
+    <interets>
+        <interest>
+            <en>Video Game Development</en>
+            <fr>Développement de jeux vidéo</fr>
+            <zh>视频游戏开发</zh>
+        </interest>
+        <interest>
+            <en>Web Development</en>
+            <fr>Développement web</fr>
+            <zh>网络开发</zh>
+        </interest>
+        <interest>
+            <en>DIY Projects</en>
+            <fr>Projets DIY</fr>
+            <zh>DIY项目</zh>
+        </interest>
+    </interets>
     <projects>
-        <schoolProjects>
-            <project>
-                <en>Design and development of an RPG (Role Playing Game) using a graphical library in C</en>
-                <fr>Conception et réalisation d'un RPG (Role Play Game) à l'aide d'une bibliothèque graphique en C</fr>
-                <zh>使用C语言图形库设计和开发RPG（角色扮演游戏）</zh>
-            </project>
-            <project>
-                <en>Development of the Mastermind game using the GTK3 library with an MVC (Model-View-Controller) pattern in C</en>
-                <fr>Réalisation du jeu Mastermind à l'aide de la bibliothèque GTK3 et avec un système de contrôleur-vue-modèle en C</fr>
-                <zh>使用GTK3库和MVC（模型-视图-控制器）模式开发Mastermind游戏</zh>
-            </project>
-            <project>
-                <en>Data analysis in R to find a correlation between the music listened to by the French and the COVID-19 lockdowns</en>
-                <fr>Réalisation d'une étude de données en R pour trouver une corrélation entre les musiques écoutées par les français et les confinements de la covid19</fr>
-                <zh>使用R进行数据分析，寻找法国人听的音乐与COVID-19封锁之间的相关性</zh>
-            </project>
-            <project>
-                <en>Design and development of a program to calculate the shortest route between 2 metro stations in C</en>
-                <fr>Conception et réalisation d'un programme permettant de calculer l'itinéraire le plus court entre 2 stations de métro en C</fr>
-                <zh>设计和开发计算两地铁站之间最短路线的程序（使用C语言）</zh>
-            </project>
-            <project>
-                <en>Modeling and design of a mobile application to track the evolution of an epidemic within a population</en>
-                <fr>Modélisation et conception d’une application mobile qui sert à suivre l’évolution d’une épidémie au sein d’une population</fr>
-                <zh>建模和设计一个移动应用程序，用于跟踪人群中疫情的发展</zh>
-            </project>
-            <project>
-                <en>Design, modeling, and development of a program to simulate an ecosystem in Java</en>
-                <fr>Conception, modélisation et réalisation d'un programme permettant de simuler un écosystème en Java</fr>
-                <zh>设计、建模和开发一个Java程序来模拟生态系统</zh>
-            </project>
-        </schoolProjects>
-        <personalProjects>
-            <project>
-                <en>Learning C# and Unity</en>
-                <fr>Apprentissage de C# et de Unity</fr>
-                <zh>学习C#和Unity</zh>
-            </project>
-            <project>
-                <en>Design and development of video game prototypes</en>
-                <fr>Conception et réalisation de prototypes de jeux vidéos</fr>
-                <zh>设计和开发视频游戏原型</zh>
-            </project>
-        </personalProjects>
+        <project>
+            <en>RPG Game in C: Developed a fully functional RPG game with game mechanics, character interactions, and UI elements using a graphics library in C.</en>
+            <fr>Jeu RPG en C : Développé un jeu RPG entièrement fonctionnel avec des mécanismes de jeu, des interactions de personnages et des éléments d'interface utilisateur à l'aide d'une bibliothèque graphique en C.</fr>
+            <zh>C语言RPG游戏：使用C语言图形库开发了一个功能齐全的RPG游戏，具有游戏机制、角色互动和UI元素。</zh>
+        </project>
+        <project>
+            <en>Mastermind Game in C: Implemented Mastermind using GTK3 and MVC architecture in C.</en>
+            <fr>Jeu Mastermind en C : Implémenté Mastermind en utilisant GTK3 et l'architecture MVC en C.</fr>
+            <zh>使用C语言实现Mastermind游戏，使用GTK3和MVC架构。</zh>
+        </project>
+        <project>
+            <en>Data Analysis in R: Analyzed correlations between music habits and COVID-19 lockdowns using statistical methods and data visualization in R.</en>
+            <fr>Analyse de données en R : Analyser les corrélations entre les habitudes musicales et les confinements COVID-19 en utilisant des méthodes statistiques et la visualisation des données en R.</fr>
+            <zh>在R语言中使用统计方法和数据可视化分析音乐习惯与COVID-19封锁之间的相关性。</zh>
+        </project>
+        <project>
+            <en>Paris Metro Route Calculator in C: Designed a route calculator for the Paris metro system, implementing shortest path algorithms in C.</en>
+            <fr>Calculateur d'itinéraire du métro de Paris en C : Conception d'un calculateur d'itinéraire pour le système de métro parisien, implémentant des algorithmes de chemin le plus court en C.</fr>
+            <zh>巴黎地铁路线计算器使用C语言设计了一个巴黎地铁系统的路线计算器，实现了最短路径算法。</zh>
+        </project>
+        <project>
+            <en>Epidemic Tracking Mobile App: Modeled and designed a mobile app to track epidemic progression with real-time updates and notifications.</en>
+            <fr>Application mobile de suivi des épidémies : Modélisé et conçu une application mobile pour suivre l'évolution de l'épidémie avec des mises à jour et des notifications en temps réel.</fr>
+            <zh>疫情跟踪移动应用：建模和设计了一个移动应用程序，用于跟踪疫情进展，提供实时更新和通知。</zh>
+        </project>
+        <project>
+            <en>Ecosystem Simulation in Java: Created an ecosystem simulation with species interactions and environmental factors in Java.</en>
+            <fr>Simulation d'écosystème en Java : Créé une simulation d'écosystème avec des interactions entre les espèces et des facteurs environnementaux en Java.</fr>
+            <zh>Java中的生态系统模拟：使用Java创建了一个生态系统模拟，具有物种互动和环境因素。</zh>
+        </project>
+        <project>
+            <en>Movie Web App in Node.js: Developed a Node.js web application for searching and showing movies in theaters, integrating movie database APIs.</en>
+            <fr>Application web de films en Node.js : Développé une application web Node.js pour rechercher et afficher des films en salles, en intégrant des API de base de données de films.</fr>
+            <zh>Node.js中的电影Web应用程序：开发了一个Node.js Web应用程序，用于搜索和显示电影院中的电影，集成了电影数据库API。</zh>
+        </project>
+        <project>
+            <en>Optimal Antenna Placement: Solved optimal placement of antennas for city coverage, ensuring maximum coverage with minimal resources.</en>
+            <fr>Placement optimal des antennes : Résolution du placement optimal des antennes pour la couverture de la ville, en assurant une couverture maximale avec des ressources minimales.</fr>
+            <zh>最佳天线布局：解决了城市覆盖的天线最佳布局问题，确保以最少的资源实现最大覆盖。</zh>
+        </project>
     </projects>
 </resume>

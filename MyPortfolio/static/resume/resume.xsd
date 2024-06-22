@@ -11,6 +11,8 @@
                 <xs:element name="education" type="educationType"/>
                 <xs:element name="experience" type="experienceType"/>
                 <xs:element name="skills" type="skillsType"/>
+                <xs:element name="languages" type="languagesType"/>
+                <xs:element name="interets" type="interetsType"/>
                 <xs:element name="projects" type="projectsType"/>
             </xs:sequence>
         </xs:complexType>
@@ -29,7 +31,7 @@
         <xs:sequence>
             <xs:element name="en" type="xs:string"/>
             <xs:element name="fr" type="xs:string"/>
-            <xs:element name="cn" type="xs:string"/>
+            <xs:element name="zh" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
@@ -37,7 +39,7 @@
     <xs:complexType name="personalInfoType">
         <xs:sequence>
             <xs:element name="name" type="multiLangType"/>
-            <xs:element name="age" type="xs:integer"/>
+            <xs:element name="birthdate" type="xs:string"/>
             <xs:element name="phone" type="xs:string"/>
             <xs:element name="address" type="multiLangType"/>
             <xs:element name="email" type="xs:string"/>
@@ -55,7 +57,7 @@
 
     <xs:complexType name="courseType">
         <xs:sequence>
-            <xs:element name="years" type="xs:string"/>
+            <xs:element name="years" type="multiLangType"/>
             <xs:element name="degree" type="multiLangType"/>
             <xs:element name="institution" type="multiLangType"/>
         </xs:sequence>
@@ -70,7 +72,7 @@
 
     <xs:complexType name="jobType">
         <xs:sequence>
-            <xs:element name="years" type="xs:string"/>
+            <xs:element name="years" type="multiLangType"/>
             <xs:element name="position" type="multiLangType"/>
             <xs:element name="location" type="multiLangType"/>
             <xs:element name="tasks" type="tasksType"/>
@@ -103,15 +105,29 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- projects type definition -->
-    <xs:complexType name="projectsType">
+    <!-- languages type definition -->
+    <xs:complexType name="languagesType">
         <xs:sequence>
-            <xs:element name="schoolProjects" type="projectsGroupType"/>
-            <xs:element name="personalProjects" type="projectsGroupType"/>
+            <xs:element name="language" maxOccurs="unbounded" type="languageType"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="projectsGroupType">
+    <xs:complexType name="languageType">
+        <xs:sequence>
+            <xs:element name="name" type="multiLangType"/>
+            <xs:element name="level" type="multiLangType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- interets type definition -->
+    <xs:complexType name="interetsType">
+        <xs:sequence>
+            <xs:element name="interest" maxOccurs="unbounded" type="multiLangType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- projects type definition -->
+    <xs:complexType name="projectsType">
         <xs:sequence>
             <xs:element name="project" maxOccurs="unbounded" type="multiLangType"/>
         </xs:sequence>
