@@ -1,4 +1,4 @@
-<!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interets, projects)>
+<!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)>
 <!ELEMENT page (lang, title)>
 <!ELEMENT lang (#PCDATA)>
 <!ELEMENT title (en, fr, zh)>
@@ -24,6 +24,7 @@
 
 <!ELEMENT experience (job+)>
 <!ELEMENT job (years, position, location, tasks)>
+<!ELEMENT years (en, fr, zh)>
 <!ELEMENT position (en, fr, zh)>
 <!ELEMENT location (en, fr, zh)>
 <!ELEMENT tasks (task+)>
@@ -40,7 +41,7 @@
 <!ELEMENT name (en, fr, zh)>
 <!ELEMENT level (en, fr, zh)>
 
-<!ELEMENT interets (interest+)>
+<!ELEMENT interests (interest+)>
 <!ELEMENT interest (en, fr, zh)>
 
 <!ELEMENT projects (project+)>
