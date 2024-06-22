@@ -1,6 +1,6 @@
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:param name="lang" select="resume/page/lang"/>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
+    <xsl:param name="lang" select="resume/page/lang"/>
     <xsl:template match="/">
         <html lang="{resume/page/lang}" xml:lang="{resume/page/lang}">
             <head>
