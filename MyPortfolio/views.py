@@ -63,7 +63,7 @@ def resume_view(request):
     with open (os.path.join('MyPortfolio', 'static', 'resume', 'resume.dtd'), 'r') as dtd_file:
         dtd = dtd_file.read()
     
-    dtd = "<!DOCTYPE resume SYSTEM \"https://mingjie-portfolio.vercel.app/static/resume/resume.dtd\">"
+    dtd = "<!DOCTYPE resume SYSTEM \"https://mingjie-portfolio.vercel.app/resume.dtd\">"
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
@@ -94,9 +94,11 @@ def contact(request):
     return render(request, 'contact.html')
 
 def serve_dtd(request):
-    file_path = os.path.join(settings.STATIC_ROOT, 'resume/resume.dtd')
+    file_path =  os.path.join('MyPortfolio', 'templates', 'resume' , 'resume.dtd')
     with open(file_path, 'r') as file:
         content = file.read()
+    if not content:
+        print("No content")
     response = HttpResponse(content, content_type='application/xml-dtd')
     # Ensure Content-Disposition header is not set
     response['Content-Disposition'] = ''
