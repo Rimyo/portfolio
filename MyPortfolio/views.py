@@ -63,7 +63,7 @@ def resume_view(request):
     with open (os.path.join('MyPortfolio', 'static', 'resume', 'resume.dtd'), 'r') as dtd_file:
         dtd = dtd_file.read()
     
-    dtd = """<!DOCTYPE resume SYSTEM "https://mingjie-portfolio.vercel.app/resume.dtd">"""
+    dtd = """<!DOCTYPE resume SYSTEM "https://rimyo.github.io/portfolio/MyPortfolio/static/resume/resume.dtd">"""
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
@@ -92,15 +92,3 @@ def projects(request):
 
 def contact(request):
     return render(request, 'contact.html')
-
-def serve_dtd(request):
-    file_path =  os.path.join('MyPortfolio', 'templates', 'resume' , 'resume.dtd')
-    with open(file_path, 'r') as file:
-        content = file.read()
-    response = HttpResponse(content, content_type='application/xml-dtd')
-    response["Strict-Transport-Security"] = ""
-    response["Cross-Origin-Opener-Policy"] = ""
-    response["Referrer-Policy"] = ""
-    response["X-Content-Type-Options"] = ""
-    response["X-Frame-Options"] = ""
-    return response
