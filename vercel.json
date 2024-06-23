@@ -1,15 +1,4 @@
 {
-  "headers": [
-    {
-      "source": "/resume/",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml"
-        }
-      ]
-    }
-  ],
   "builds": [
     {
       "src": "portfolio/wsgi.py",
@@ -21,18 +10,14 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/static/(.*)",
-      "destination": "/staticfiles/$1"
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
     },
     {
-      "source": "/resume/",
-      "destination": "/resume"
-    },
-    {
-      "source": "/:path*",
-      "destination": "portfolio/wsgi.py"
+      "src": "/(.*)",
+      "dest": "portfolio/wsgi.py"
     }
   ]
 }
