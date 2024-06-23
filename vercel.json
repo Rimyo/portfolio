@@ -1,4 +1,15 @@
 {
+  "headers": [
+    {
+      "source": "/resume/",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml"
+        }
+      ]
+    }
+  ],
   "builds": [
     {
       "src": "portfolio/wsgi.py",
