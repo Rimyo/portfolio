@@ -63,12 +63,12 @@ def resume_view(request):
     with open (os.path.join('MyPortfolio', 'static', 'resume', 'resume.dtd'), 'r') as dtd_file:
         dtd = dtd_file.read()
     
-    dtd = "<!DOCTYPE resume SYSTEM \"http://mingjie-portfolio.vercel.app/resume.dtd\">"
+    dtd = "<!DOCTYPE resume SYSTEM \"http://mingjie-portfolio.vercel.app/static/resume/resume.dtd\">"
         
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
-    full_xml_str = f"{xml_declaration}\n{dtd}\n{xml_stylesheet}\n{xml_string}"
+    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\n{dtd}\n{xml_string}"
 
     # Return the modified XML as the response
     return HttpResponse(full_xml_str, content_type='application/xml')
@@ -93,8 +93,3 @@ def projects(request):
 
 def contact(request):
     return render(request, 'contact.html')
-
-def dtd(request):
-    with open(os.path.join('MyPortfolio', 'static', 'resume', 'resume.dtd'), 'r') as dtd_file:
-        dtd = dtd_file.read()
-    return HttpResponse(dtd, content_type='application/xml')
