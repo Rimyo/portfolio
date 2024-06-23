@@ -1,4 +1,3 @@
-<!DOCTYPE resume [
 <!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)>
 <!ELEMENT page (lang, title)>
 <!ELEMENT lang (#PCDATA)>
@@ -6,6 +5,7 @@
 <!ELEMENT en (#PCDATA)>
 <!ELEMENT fr (#PCDATA)>
 <!ELEMENT zh (#PCDATA)>
+
 <!ELEMENT personalInfo (name, birthdate, phone, email, linkedin, github)>
 <!ELEMENT name (en, fr, zh)>
 <!ELEMENT birthdate (#PCDATA)>
@@ -13,30 +13,34 @@
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT linkedin (#PCDATA)>
 <!ELEMENT github (#PCDATA)>
+
 <!ELEMENT presentation (en, fr, zh)>
+
 <!ELEMENT education (course+)>
 <!ELEMENT course (years, degree, institution)>
 <!ELEMENT years (en, fr, zh)>
 <!ELEMENT degree (en, fr, zh)>
 <!ELEMENT institution (en, fr, zh)>
+
 <!ELEMENT experience (job+)>
 <!ELEMENT job (years, position, location, tasks)>
-<!ELEMENT years (en, fr, zh)>
 <!ELEMENT position (en, fr, zh)>
 <!ELEMENT location (en, fr, zh)>
 <!ELEMENT tasks (task+)>
 <!ELEMENT task (en, fr, zh)>
+
 <!ELEMENT skills (skill+)>
 <!ELEMENT skill (category, details)>
 <!ELEMENT category (en, fr, zh)>
 <!ELEMENT details (detail+)>
 <!ELEMENT detail (en, fr, zh)>
+
 <!ELEMENT languages (language+)>
 <!ELEMENT language (name, level)>
-<!ELEMENT name (en, fr, zh)>
 <!ELEMENT level (en, fr, zh)>
+
 <!ELEMENT interests (interest+)>
 <!ELEMENT interest (en, fr, zh)>
+
 <!ELEMENT projects (project+)>
 <!ELEMENT project (en, fr, zh)>
-]>
