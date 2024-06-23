@@ -98,4 +98,9 @@ def serve_dtd(request):
     with open(file_path, 'r') as file:
         content = file.read()
     response = HttpResponse(content, content_type='application/xml-dtd')
+    response["Strict-Transport-Security"] = ""
+    response["Cross-Origin-Opener-Policy"] = ""
+    response["Referrer-Policy"] = ""
+    response["X-Content-Type-Options"] = ""
+    response["X-Frame-Options"] = ""
     return response
