@@ -24,7 +24,6 @@
 
 <!ELEMENT experience (job+)>
 <!ELEMENT job (years, position, location, tasks)>
-<!ELEMENT years (en, fr, zh)>
 <!ELEMENT position (en, fr, zh)>
 <!ELEMENT location (en, fr, zh)>
 <!ELEMENT tasks (task+)>
@@ -38,7 +37,6 @@
 
 <!ELEMENT languages (language+)>
 <!ELEMENT language (name, level)>
-<!ELEMENT name (en, fr, zh)>
 <!ELEMENT level (en, fr, zh)>
 
 <!ELEMENT interests (interest+)>
