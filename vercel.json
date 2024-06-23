@@ -10,14 +10,14 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/static/(.*)",
-      "dest": "/staticfiles/$1"
+      "source": "/static/:path*",
+      "destination": "/staticfiles/:path*"
     },
     {
-      "src": "/(.*)",
-      "dest": "portfolio/wsgi.py"
+      "source": "/:path*",
+      "destination": "/portfolio/wsgi.py"
     }
   ],
   "redirects": [
