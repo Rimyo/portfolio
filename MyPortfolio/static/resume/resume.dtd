@@ -1,4 +1,4 @@
-<!DOCTYPE resume [<!ELEMENT resume (
+<!DOCTYPE resume [
 <!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)>
 <!ELEMENT page (lang, title)>
 <!ELEMENT lang (#PCDATA)>
