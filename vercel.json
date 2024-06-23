@@ -8,15 +8,6 @@
           "value": "application/xml"
         }
       ]
-    },
-    {
-      "source": "/resume",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml"
-        }
-      ]
     }
   ],
   "builds": [
@@ -36,7 +27,7 @@
       "destination": "/staticfiles/$1"
     },
     {
-      "source": "/resume",
+      "source": "/resume/",
       "destination": "/resume"
     },
     {
