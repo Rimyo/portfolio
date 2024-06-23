@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>
 
-<resume>
+<resume xmlns="http://mingjie-portfolio.vercel.app/resume">
     <page>
         <lang>en</lang>
         <title>
