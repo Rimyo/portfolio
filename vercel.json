@@ -19,5 +19,17 @@
         "src": "/(.*)",
         "dest": "portfolio/wsgi.py"
       }
+    ],
+    
+    "headers": [
+      {
+        "source": "/resume",
+        "headers": [
+          {
+            "key": "Content-Type",
+            "value": "application/xml"
+          }
+        ]
+      }
     ]
   }
