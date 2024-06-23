@@ -1,21 +1,7 @@
 {
-  "rewrites": [
-    {
-      "source": "/static/:path*",
-      "destination": "/staticfiles/:path*"
-    },
-    {
-      "source": "/resume",
-      "destination": "/resume"
-    },
-    {
-      "source": "/:path*",
-      "destination": "portfolio/wsgi.py"
-    }
-  ],
   "headers": [
     {
-      "source": "/resume/",
+      "source": "/resume",
       "headers": [
         {
           "key": "Content-Type",
@@ -33,6 +19,20 @@
     {
       "src": "staticfiles/**/*",
       "use": "@vercel/static"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/staticfiles/$1"
+    },
+    {
+      "source": "/resume",
+      "destination": "/resume"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "portfolio/wsgi.py"
     }
   ]
 }
