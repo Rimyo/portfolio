@@ -59,7 +59,7 @@ def resume_view(request):
     # Convert the modified XML back to a string, including the XML declaration and stylesheet
     xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>'
     xml_stylesheet = '<?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>'
-    dtd = """<!DOCTYPE resume SYSTEM "http://darksrv.netlib.re:3434/portfolio.dtd">"""
+    dtd = """<!DOCTYPE resume SYSTEM "https://mingjie-portfolio.vercel.app/static/resume/resume.dtd">"""
     
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
