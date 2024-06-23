@@ -10,21 +10,14 @@
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/static/:path*",
-      "destination": "/staticfiles/:path*"
+      "src": "/static/(.*)",
+      "dest": "/staticfiles/$1"
     },
     {
-      "source": "/:path*",
-      "destination": "/portfolio/wsgi.py"
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "http://mingjie-portfolio.vercel.app/$1",
-      "permanent": false
+      "src": "/(.*)",
+      "dest": "portfolio/wsgi.py"
     }
   ]
 }
