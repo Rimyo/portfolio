@@ -55,17 +55,17 @@ def resume_view(request):
         lang_element.text = lang
     if(lang == 'zh-hans'):
         lang_element.text = 'zh'
-        print(lang)
 
     # Convert the modified XML back to a string, including the XML declaration and stylesheet
     xml_declaration = '<?xml version="1.0" encoding="UTF-8"?>'
     xml_stylesheet = '<?xml-stylesheet type="text/xsl" href="/static/resume/resume.xsl"?>'
-    
     dtd = """<!DOCTYPE resume SYSTEM "https://mingjie-portfolio.vercel.app/static/resume/resume.dtd">"""
+    
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
-    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\n{xml_string}"
+    full_xml_str = f"{xml_declaration}\n{xml_stylesheet}\{dtd}\n{xml_string}"
+
 
     # Return the modified XML as the response
     return HttpResponse(full_xml_str, content_type='application/xml')
