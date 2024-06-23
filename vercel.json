@@ -21,30 +21,30 @@
       }
     ],
     "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Strict-Transport-Security",
-          "value": ""
-        },
-        {
-          "key": "Cross-Origin-Opener-Policy",
-          "value": ""
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": ""
-        },
-        {
-          "key": "X-Content-Type-Options",
-          "value": ""
-        },
-        {
-          "key": "X-Frame-Options",
-          "value": ""
-        }
-      ]
-    }
+      {
+        "source": "/(.*)",
+        "headers": [
+          {
+            "key": "Strict-Transport-Security",
+            "value": ""
+          },
+          {
+            "key": "Cross-Origin-Opener-Policy",
+            "value": ""
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": ""
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": ""
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": ""
+          }
+        ]
+      }
     ]
   }
