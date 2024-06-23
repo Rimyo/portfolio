@@ -19,5 +19,12 @@
       "src": "/(.*)",
       "dest": "portfolio/wsgi.py"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "http://mingjie-portfolio.vercel.app/$1",
+      "permanent": false
+    }
   ]
 }
