@@ -1,5 +1,10 @@
-<!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)><!ELEMENT page (lang, title)>
-<!ELEMENT lang (#PCDATA)><!ELEMENT title (en, fr, zh)><!ELEMENT en (#PCDATA)><!ELEMENT fr (#PCDATA)><!ELEMENT zh (#PCDATA)>
+<!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)>
+<!ELEMENT page (lang, title)>
+<!ELEMENT lang (#PCDATA)>
+<!ELEMENT title (en, fr, zh)>
+<!ELEMENT en (#PCDATA)>
+<!ELEMENT fr (#PCDATA)>
+<!ELEMENT zh (#PCDATA)>
 <!ELEMENT personalInfo (name, birthdate, phone, email, linkedin, github)>
 <!ELEMENT name (en, fr, zh)>
 <!ELEMENT birthdate (#PCDATA)>
