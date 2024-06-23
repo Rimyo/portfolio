@@ -97,7 +97,8 @@ def serve_dtd(request):
     file_path = os.path.join(settings.STATIC_ROOT, 'resume/resume.dtd')
     with open(file_path, 'r') as file:
         content = file.read()
-    response = HttpResponse(content, content_type='application/xml-adada')
+    response = HttpResponse(content, content_type='application/xml-dtd')
     # Ensure Content-Disposition header is not set
     response['Content-Disposition'] = ''
+    response['test'] = 'test'
     return response
