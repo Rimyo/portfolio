@@ -7,15 +7,12 @@
     display: flex;
     z-index: 10;
     background-color: #e6dace;
+    justify-content: center;
 }
 
 
-body {
-    margin: 0;
-    padding: 0; /* Remove right padding to account for scrollbar width */
-    font-family: Arial, sans-serif;
-    min-height: 100vh; /* Allow body to stretch with content */
-    display: flex;
-    flex-direction: column; /* Ensure content is stacked vertically */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+
+iframe {
+    max-width: 100%;
+    border: none;
 }

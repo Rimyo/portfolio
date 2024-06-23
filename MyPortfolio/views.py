@@ -85,11 +85,24 @@ def home(request):
     context = {
         'LANGUAGE_CODE': get_language(),
     }
-    print("context: ", context)
+
     return render(request, 'home.html', context)
 
 def projects(request):
-    return render(request, 'projects.html')
+    current_language = get_language()
+
+    if current_language == 'zh-hans':
+        youtube_lang_code = 'zh-CN'
+    else:
+        youtube_lang_code = current_language
+
+    print(f"Current language: {current_language}")
+    print(f"Youtube language code: {youtube_lang_code}")
+
+    context = {
+        'youtube_lang_code': youtube_lang_code,
+    }
+    return render(request, 'projects.html', context)
 
 def contact(request):
     return render(request, 'contact.html')

@@ -1,10 +1,15 @@
 {% extends 'base.html' %}
 {% load i18n %}
 {% load static %}
+
 {% block title %}Home{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{% static 'css/projects.css' %}">
 <div class="container">
-
+    <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/xQ156y4TtJs?cc_lang_pref={{ youtube_lang_code }}&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
 </div>
+<script>
+    // Print the language code to the browser's console
+    console.log("YouTube language code: {{ youtube_lang_code }}");
+</script>
 {% endblock %}

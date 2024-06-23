@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0; /* Remove right padding to account for scrollbar width */
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Allow body to stretch with content */
     display: flex;
-    justify-content: space-between; /* Ensure space for the sidebar */
+    flex-direction: column; /* Ensure content is stacked vertically */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .navbar {
