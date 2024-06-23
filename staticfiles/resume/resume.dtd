@@ -1,4 +1,3 @@
-<!DOCTYPE resume [
 <!ELEMENT resume (page, personalInfo, presentation, education, experience, skills, languages, interests, projects)>
 <!ELEMENT page (lang, title)>
 <!ELEMENT lang (#PCDATA)>
@@ -37,4 +36,3 @@
 <!ELEMENT interest (en, fr, zh)>
 <!ELEMENT projects (project+)>
 <!ELEMENT project (en, fr, zh)>
-]>
