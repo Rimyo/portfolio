@@ -63,7 +63,7 @@ def resume_view(request):
     with open (os.path.join('MyPortfolio', 'static', 'resume', 'resume.dtd'), 'r') as dtd_file:
         dtd = dtd_file.read()
     
-    dtd = "<!DOCTYPE resume SYSTEM \"http://darksrv.netlib.re:3434/portfolio.dtd\">"
+    dtd = "<!DOCTYPE resume SYSTEM \"http://mingjie-portfolio.vercel.app/static/resume/resume.dtd\">"
     xml_string = etree.tostring(root, pretty_print=True, encoding='UTF-8').decode('UTF-8')
 
     # Combine the declaration, stylesheet, and XML content
