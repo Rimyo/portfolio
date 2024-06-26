@@ -87,7 +87,12 @@
                     </button>
                 </div>
                 <div class="sidebar">
-                    <a href="/" class="sidebar-link">Accueil</a>
+                    <a href="/" class="sidebar-link">
+                    <xsl:choose>
+                        <xsl:when test="$lang='en'">Home</xsl:when>
+                        <xsl:when test="$lang='fr'">Accueil</xsl:when>
+                        <xsl:when test="$lang='zh'">主页</xsl:when>
+                    </a>
                     <a href="/resume/" class="sidebar-link active">
                         <xsl:choose>
                             <xsl:when test="$lang='en'">Resume</xsl:when>
